@@ -3,7 +3,6 @@
 <div class="jumbotron">
     <h1>Jamie Samoyed</h1>
     <p class="lead">The adventures of Jamie, Alice, and friends.</p>
-    <p><a href="http://bottlepy.org/docs/dev/index.html" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
     <p><img src="/static/banner-cripplecreek.jpg" align="center"/></p>
 </div>
 
