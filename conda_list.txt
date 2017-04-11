@@ -1,0 +1,8 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-32
+@EXPLICIT
+https://repo.continuum.io/pkgs/free/win-32/pip-9.0.1-py27_1.tar.bz2
+https://repo.continuum.io/pkgs/free/win-32/python-2.7.8-0.tar.bz2
+https://repo.continuum.io/pkgs/free/win-32/setuptools-27.2.0-py27_1.tar.bz2
+https://repo.continuum.io/pkgs/free/win-32/wheel-0.29.0-py27_0.tar.bz2
