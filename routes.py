@@ -1,6 +1,7 @@
 """
 Routes and views for the bottle application.
 """
+import sys
 
 from bottle import route, view
 from datetime import datetime
@@ -30,6 +31,6 @@ def about():
     """Renders the about page."""
     return dict(
         title='About',
-        message='Your application description page.',
+        message='Python version -> ' + sys.version,
         year=datetime.now().year
     )
