@@ -30,7 +30,11 @@ def contact():
 @view('about')
 def about():
     """About page displays Python configuration info."""
-    return '<b>Python version & location:</b><br/>' + \
-        sys.version + '<br/>' + sys.prefix + '<br/><br/>' + \
-        '<b>Current working directory:</b></br>' + os.getcwd() + '<br/><br/>' + \
-        '<b>sys.path:</b><br/>' + ('<br/>'.join(sys.path))
+    bottle_version = getattr(sys.modules['bottle'], '__version__', 'unknown')
+    bottle_location = getattr(sys.modules['bottle'], '__file__', 'unknown')
+    return '<b>Python version:</b> {0}'.format(sys.version) + '<br/>' + \
+        '<b>Python location:</b> {0}'.format(sys.prefix) + '<br/>' + \
+        '<b>Current folder:</b> {0}'.format(os.getcwd()) + '<br/>' + \
+        '<b>Bottle version:</b> {0}'.format(bottle_version) + '<br/>' + \
+        '<b>Bottle location:</b> {0}'.format(bottle_location) + '<br/><br/>' + \
+        '<b>sys.path (Python search path):</b><br/>' + ('<br/>'.join(sys.path))
