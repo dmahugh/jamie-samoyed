@@ -1,6 +1,7 @@
 """
 Routes and views for the bottle application.
 """
+import os
 import sys
 
 from bottle import route, view
@@ -28,13 +29,8 @@ def contact():
 @route('/about')
 @view('about')
 def about():
-    """Renders the about page."""
-    #return dict(
-    #    title='About the runtime environment',
-    #    message='Python version: ' + sys.version + ' >>>>> sys.path: ' + str(sys.path),
-    #    year=datetime.now().year
-    #)
-    return '<b>Python version:</b><br/>' + \
-        sys.version + '<br/><br/><b>sys.prefix:</b></br>' + sys.prefix + \
-        '<br/><br/><b>sys.path:</b><br/>' + \
-        ('<br/>'.join(sys.path))
+    """About page displays Python configuration info."""
+    return '<b>Python version & location:</b><br/>' + \
+        sys.version + '<br/>' + sys.prefix + '<br/><br/>' + \
+        '<b>Current working directory:</b></br>' + os.getcwd() + '<br/><br/>' + \
+        '<b>sys.path:</b><br/>' + ('<br/>'.join(sys.path))
