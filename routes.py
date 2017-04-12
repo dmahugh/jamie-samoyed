@@ -32,9 +32,11 @@ def about():
     """About page displays Python configuration info."""
     bottle_version = getattr(sys.modules['bottle'], '__version__', 'unknown')
     bottle_location = getattr(sys.modules['bottle'], '__file__', 'unknown')
-    return '<b>Python version:</b> {0}'.format(sys.version) + '<br/>' + \
-        '<b>Python location:</b> {0}'.format(sys.prefix) + '<br/>' + \
-        '<b>Current folder:</b> {0}'.format(os.getcwd()) + '<br/>' + \
-        '<b>Bottle version:</b> {0}'.format(bottle_version) + '<br/>' + \
+    return '<p style="font-family:Consolas,Monaco,Lucida Console,Courier New, monospace">' + \
+        '<b>Current folder:</b>&nbsp;&nbsp;{0}'.format(os.getcwd()) + '<br/><br/>' + \
+        '<b>Python version:</b>&nbsp;&nbsp;{0}'.format(sys.version) + '<br/>' + \
+        '<b>Python location:</b> {0}'.format(sys.prefix) + '<br/><br/>' + \
+        '<b>Bottle version:</b>&nbsp;&nbsp;{0}'.format(bottle_version) + '<br/>' + \
         '<b>Bottle location:</b> {0}'.format(bottle_location) + '<br/><br/>' + \
-        '<b>sys.path (Python search path):</b><br/>' + ('<br/>'.join(sys.path))
+        '<b>Python search path (sys.path)):</b><br/>' + ('<br/>'.join(sys.path)) + '</p>' + \
+        '<a href="/">return to home page</a>'
