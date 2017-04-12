@@ -4,6 +4,7 @@ Routes and views for the bottle application.
 import os
 import platform
 import shutil
+import socket
 import sys
 
 from bottle import route, view
@@ -45,6 +46,8 @@ def about():
         '<b>Disk total:</b> {0:,}'.format(total) + '<br/>' + \
         '<b>Disk used:</b>&nbsp;&nbsp;{0:,}'.format(used) + '<br/>' + \
         '<b>Disk free:</b>&nbsp;&nbsp;{0:,}'.format(free) + '<br/><br/>' + \
+        '<b>Host name:</b>&nbsp;&nbsp;{0}'.format(socket.gethostname()) + '<br/>' + \
+        '<b>IP address:</b>&nbsp;&nbsp;{0}'.format(socket.gethostbyname(socket.gethostname())) + '<br/><br/>' + \
         '<b>Current directory:</b>&nbsp;&nbsp;{0}'.format(os.getcwd()) + '<br/>' + \
         '<b>Directory contents:</b> ' + str(sorted(os.listdir())) + '<br/>' + \
         '</p>' + '<a href="/">return to home page</a>'
