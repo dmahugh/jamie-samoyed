@@ -35,5 +35,6 @@ def about():
     #    year=datetime.now().year
     #)
     return '<b>Python version:</b><br/>' + \
-        sys.version + '<br/><br/><b>sys.path:</b><br/>' + \
+        sys.version + '<br/><br/><b>sys.prefix:</b></br>' + sys.prefix + \
+        '<br/><br/><b>sys.path:</b><br/>' + \
         ('<br/>'.join(sys.path))
