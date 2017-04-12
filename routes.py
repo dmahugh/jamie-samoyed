@@ -30,7 +30,7 @@ def contact():
 def about():
     """Renders the about page."""
     return dict(
-        title='About',
-        message='Python version -> ' + sys.version,
+        title='About the runtime environment',
+        message='Python version: ' + sys.version + ' >>>>> sys.path: ' + str(sys.path),
         year=datetime.now().year
     )
