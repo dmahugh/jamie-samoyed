@@ -29,8 +29,11 @@ def contact():
 @view('about')
 def about():
     """Renders the about page."""
-    return dict(
-        title='About the runtime environment',
-        message='Python version: ' + sys.version + ' >>>>> sys.path: ' + str(sys.path),
-        year=datetime.now().year
-    )
+    #return dict(
+    #    title='About the runtime environment',
+    #    message='Python version: ' + sys.version + ' >>>>> sys.path: ' + str(sys.path),
+    #    year=datetime.now().year
+    #)
+    return '<b>Python version:</b><br/>' + \
+        sys.version + '<br/><br/><b>sys.path:</b><br/>' + \
+        ('<br/>'.join(sys.path))
