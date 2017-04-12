@@ -3,7 +3,7 @@
 <div class="jumbotron">
     <h1>Jamie Samoyed</h1>
     <p class="lead">The adventures of Jamie, Alice, and friends.</p>
-    <p><img src="/static/banner-cripplecreek.jpg" align="center"/></p>
+    <p><img src="/static/banner-cripplecreek.jpg" align="center" class="img-responsive"/></p>
 </div>
 
 <div class="row">

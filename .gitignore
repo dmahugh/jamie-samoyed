@@ -1,3 +1,5 @@
+# our local files not needed for web app
+_todo.txt
 ae.bat
 web-FIXED.config
 web-OLD.config
