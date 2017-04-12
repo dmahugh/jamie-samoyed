@@ -36,7 +36,8 @@ def about():
     bottle_version = getattr(sys.modules['bottle'], '__version__', 'unknown')
     bottle_location = getattr(sys.modules['bottle'], '__file__', 'unknown')
     total, used, free = shutil.disk_usage('/')
-    return '<p style="font-family:Consolas,Monaco,Lucida Console,Courier New, monospace">' + \
+    return '<h1>System Info</h1>' + '<a href="/">return to home page</a>' + \
+        '<p style="font-family:Consolas,Monaco,Lucida Console,Courier New, monospace">' + \
         '<b>Python version:</b>&nbsp;&nbsp;{0}'.format(sys.version) + '<br/>' + \
         '<b>Python location:</b> {0}'.format(sys.prefix) + '<br/><br/>' + \
         '<b>Bottle version:</b>&nbsp;&nbsp;{0}'.format(bottle_version) + '<br/>' + \
@@ -49,5 +50,4 @@ def about():
         '<b>Host name:</b>&nbsp;&nbsp;{0}'.format(socket.gethostname()) + '<br/>' + \
         '<b>IP address:</b>&nbsp;&nbsp;{0}'.format(socket.gethostbyname(socket.gethostname())) + '<br/><br/>' + \
         '<b>Current directory:</b>&nbsp;&nbsp;{0}'.format(os.getcwd()) + '<br/>' + \
-        '<b>Directory contents:</b> ' + str(sorted(os.listdir())) + '<br/>' + \
-        '</p>' + '<a href="/">return to home page</a>'
+        '<br/>'.join(sorted(os.listdir())) + '</p>'
