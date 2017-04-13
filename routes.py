@@ -26,7 +26,6 @@ def about():
     """About page."""
     return dict(
         title='About',
-        message='About page content.',
         year=datetime.now().year
     )
 
