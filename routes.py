@@ -44,7 +44,7 @@ def about():
 @view('sysinfo')
 def sysinfo():
     """Display runtime environment info."""
-    total, used, free = shutil.disk_usage('/')
+    total, _, free = shutil.disk_usage('/')
 
     return dict(
         title='System Information',
@@ -52,14 +52,13 @@ def sysinfo():
         py_version=sys.version,
         py_loc=sys.prefix,
         installed_pkgs=', '.join([_ for _ in freeze.freeze()]),
-        sys_path=', '.join(sys.path),
         os_version=platform.platform(),
-        disk_total=total,
-        disk_used=used,
-        disk_free=free,
+        disk_total=format(total, ','),
+        disk_free=format(free, ',') + ' ({0}% of {1} total)'.format(int(100*free/total), format(total, ',')),
         host_name=socket.gethostname(),
         ip_addr=socket.gethostbyname(socket.gethostname()),
         home_dir=os.getcwd(),
         runtime_txt=open('runtime.txt', 'r').read() \
-            if os.path.isfile('runtime.txt') else ''
+            if os.path.isfile('runtime.txt') else '',
+        sys_path='<br/>'.join(sys.path)
     )

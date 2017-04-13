@@ -20,18 +20,6 @@
   <td>{{ os_version }}</td>
 </tr>
 <tr>
-  <th>Disk space - total:</th>
-  <td>{{ disk_total }}</td>
-</tr>
-<tr>
-  <th>Disk space - used:</th>
-  <td>{{ disk_used }}</td>
-</tr>
-<tr>
-  <th>Disk space - free:</th>
-  <td>{{ disk_free }}</td>
-</tr>
-<tr>
   <th>Host machine:</th>
   <td>{{ host_name }}</td>
 </tr>
@@ -48,7 +36,11 @@
   <td>{{ runtime_txt }}</td>
 </tr>
 <tr>
+  <th>Free disk space:</th>
+  <td>{{ disk_free }}</td>
+</tr>
+<tr>
   <th valign="top">Python&nbsp;search&nbsp;path:</th>
-  <td>{{ sys_path }}</td>
+  <td>{{! sys_path }}</td>
 </tr>
 </table>
