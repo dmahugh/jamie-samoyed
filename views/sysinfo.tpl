@@ -12,10 +12,6 @@
   <td>{{ py_loc }}</td>
 </tr>
 <tr>
-  <th valign="top">Installed packages:</th>
-  <td>{{ installed_pkgs }}</td>
-</tr>
-<tr>
   <th>Operating system:</th>
   <td>{{ os_version }}</td>
 </tr>
@@ -38,6 +34,10 @@
 <tr>
   <th>Free disk space:</th>
   <td>{{ disk_free }}</td>
+</tr>
+<tr>
+  <th valign="top">Installed packages:</th>
+  <td>{{! installed_pkgs }}</td>
 </tr>
 <tr>
   <th valign="top">Python&nbsp;search&nbsp;path:</th>
