@@ -4,7 +4,7 @@
 
 <table>
 <tr>
-  <th>Python version:</th>
+  <th valign="top">Python version:</th>
   <td>{{ py_version }}</td>
 </tr>
 <tr>
