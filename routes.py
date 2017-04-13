@@ -36,10 +36,17 @@ def about():
     bottle_version = getattr(sys.modules['bottle'], '__version__', 'unknown')
     bottle_location = getattr(sys.modules['bottle'], '__file__', 'unknown')
     total, used, free = shutil.disk_usage('/')
+    if os.path.isfile('runtime.txt'):
+        runtime_txt = '<br/><b>runtime.txt:</b> ' + open('runtime.txt', 'r').read()
+    else:
+        runtime_txt = ''
+    hostname = socket.gethostname()
+    ip_addr = socket.gethostbyname(hostname)
+    #current_files = '<br/>'.join(sorted(os.listdir()))
     return '<h1>System Info</h1>' + '<a href="/">return to home page</a>' + \
         '<p style="font-family:Consolas,Monaco,Lucida Console,Courier New, monospace">' + \
         '<b>Python version:</b>&nbsp;&nbsp;{0}'.format(sys.version) + '<br/>' + \
-        '<b>Python location:</b> {0}'.format(sys.prefix) + '<br/><br/>' + \
+        '<b>Python location:</b> {0}'.format(sys.prefix) + runtime_txt + '<br/><br/>' + \
         '<b>Bottle version:</b>&nbsp;&nbsp;{0}'.format(bottle_version) + '<br/>' + \
         '<b>Bottle location:</b> {0}'.format(bottle_location) + '<br/><br/>' + \
         '<b>Python search path (sys.path)):</b><br/>' + ('<br/>'.join(sys.path)) + '<br/><br/>' + \
@@ -47,7 +54,6 @@ def about():
         '<b>Disk total:</b> {0:,}'.format(total) + '<br/>' + \
         '<b>Disk used:</b>&nbsp;&nbsp;{0:,}'.format(used) + '<br/>' + \
         '<b>Disk free:</b>&nbsp;&nbsp;{0:,}'.format(free) + '<br/><br/>' + \
-        '<b>Host name:</b>&nbsp;&nbsp;{0}'.format(socket.gethostname()) + '<br/>' + \
-        '<b>IP address:</b>&nbsp;&nbsp;{0}'.format(socket.gethostbyname(socket.gethostname())) + '<br/><br/>' + \
-        '<b>Current directory:</b>&nbsp;&nbsp;{0}'.format(os.getcwd()) + '<br/>' + \
-        '<br/>'.join(sorted(os.listdir())) + '</p>'
+        '<b>Host name:</b>&nbsp;&nbsp;{0}'.format(hostname) + '<br/>' + \
+        '<b>IP address:</b>&nbsp;&nbsp;{0}'.format(ip_addr) + '<br/><br/>' + \
+        '<b>Current directory:</b>&nbsp;&nbsp;{0}'.format(os.getcwd()) + '</p>'
