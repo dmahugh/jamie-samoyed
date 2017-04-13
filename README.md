@@ -6,4 +6,6 @@ To deploy an instance of this site to your own Azure account, click on this butt
 
 [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
-You can follow Jamie Samoyed on [Facebook](https://www.facebook.com/JamieSamoyed/) or [Flickr](https://www.flickr.com/photos/dogerino/), and I also post photos of Jamie and Alice on Instagram occasionally.
+You can follow Jamie & Alice on [Facebook](https://www.facebook.com/JamieSamoyed/), and they have an archive of over 10,000 photos on [Flickr](https://www.flickr.com/photos/dogerino/).
+
+![Jamie & Alice](https://raw.githubusercontent.com/dmahugh/jamie-samoyed/master/static/images/CrescentCity-banner.jpg)
