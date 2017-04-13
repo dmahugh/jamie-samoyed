@@ -71,7 +71,7 @@ def sysinfo():
         runtime_txt=open('runtime.txt', 'r').read() \
             if os.path.isfile('runtime.txt') else '',
         pkg_list=[_ for _ in freeze.freeze()],
-        sys_path='<br/>'.join(sys.path)
+        sys_path=sys.path
     )
 
 @route('/travel')
