@@ -29,6 +29,24 @@ def about():
         year=datetime.now().year
     )
 
+@route('/alice')
+@view('alice')
+def about():
+    """Raising Alice page."""
+    return dict(
+        title='Raising Alice',
+        year=datetime.now().year
+    )
+
+@route('/friends')
+@view('friends')
+def friends():
+    """Friends page."""
+    return dict(
+        title='Friends of Jamie & Alice',
+        year=datetime.now().year
+    )
+
 @route('/sysinfo')
 @view('sysinfo')
 def sysinfo():
@@ -55,3 +73,13 @@ def sysinfo():
         installed_pkgs='<br/>'.join([_ for _ in freeze.freeze()]),
         sys_path='<br/>'.join(sys.path)
     )
+
+@route('/travel')
+@view('travel')
+def friends():
+    """Travel Adventures page."""
+    return dict(
+        title='Travel Adventures',
+        year=datetime.now().year
+    )
+
