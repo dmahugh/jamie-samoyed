@@ -16,9 +16,6 @@
   <td>{{ installed_pkgs }}</td>
 </tr>
 <tr>
-  <th valign="top">Python&nbsp;search&nbsp;path:</th>
-  <td>{{ sys_path }}</td>
-<tr>
   <th>Operating system:</th>
   <td>{{ os_version }}</td>
 </tr>
@@ -49,5 +46,9 @@
 <tr>
   <th>runtime.txt:</th>
   <td>{{ runtime_txt }}</td>
+</tr>
+<tr>
+  <th valign="top">Python&nbsp;search&nbsp;path:</th>
+  <td>{{ sys_path }}</td>
 </tr>
 </table>
