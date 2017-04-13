@@ -35,7 +35,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p>&copy; {{ year }} Doug Mahugh. All Rights Reserved.</p>
+            <p>source code: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
         </footer>
     </div>
 
