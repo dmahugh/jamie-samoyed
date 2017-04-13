@@ -9,6 +9,7 @@ import sys
 
 from bottle import route, view
 from datetime import datetime
+from pip.operations import freeze
 
 @route('/')
 @route('/home')
@@ -33,8 +34,6 @@ def contact():
 @view('about')
 def about():
     """About page displays Python configuration info."""
-    bottle_version = getattr(sys.modules['bottle'], '__version__', 'unknown')
-    bottle_location = getattr(sys.modules['bottle'], '__file__', 'unknown')
     total, used, free = shutil.disk_usage('/')
     if os.path.isfile('runtime.txt'):
         runtime_txt = '<br/><b>runtime.txt:</b> ' + open('runtime.txt', 'r').read()
@@ -42,14 +41,14 @@ def about():
         runtime_txt = ''
     hostname = socket.gethostname()
     ip_addr = socket.gethostbyname(hostname)
+    installed_modules = [_ for _ in freeze.freeze()]
     #current_files = '<br/>'.join(sorted(os.listdir()))
     return '<h1>System Info</h1>' + '<a href="/">return to home page</a>' + \
         '<p style="font-family:Consolas,Monaco,Lucida Console,Courier New, monospace">' + \
         '<b>Python version:</b>&nbsp;&nbsp;{0}'.format(sys.version) + '<br/>' + \
         '<b>Python location:</b> {0}'.format(sys.prefix) + runtime_txt + '<br/><br/>' + \
-        '<b>Bottle version:</b>&nbsp;&nbsp;{0}'.format(bottle_version) + '<br/>' + \
-        '<b>Bottle location:</b> {0}'.format(bottle_location) + '<br/><br/>' + \
-        '<b>Python search path (sys.path)):</b><br/>' + ('<br/>'.join(sys.path)) + '<br/><br/>' + \
+        '<b>Installed packages:</b><br/>' + '<br/>'.join(installed_modules) + '<br/><br/>' + \
+        '<b>Python search path (sys.path):</b><br/>' + ('<br/>'.join(sys.path)) + '<br/><br/>' + \
         '<b>Operating system:</b> {0}'.format(platform.platform()) + '<br/>' + \
         '<b>Disk total:</b> {0:,}'.format(total) + '<br/>' + \
         '<b>Disk used:</b>&nbsp;&nbsp;{0:,}'.format(used) + '<br/>' + \
