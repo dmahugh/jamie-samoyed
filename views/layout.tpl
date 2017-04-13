@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }} - My Bottle Application</title>
+    <title>{{ title }} - Jamie Samoyed</title>
     <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
     <script src="/static/scripts/modernizr-2.6.2.js"></script>
@@ -23,7 +23,6 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
                     <li><a href="/sysinfo">sysinfo</a></li>
                 </ul>
             </div>
@@ -34,7 +33,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p>source code: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
+            <p style="font-size: .8em">Copyright &copy; {{ year }} Doug Mahugh. Source repo: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
         </footer>
     </div>
 

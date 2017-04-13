@@ -1,5 +1,9 @@
-# BottleAppAzure [![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+# Jamie Samoyed
 
-Bottle is a fast, simple and lightweight WSGI micro web-framework for Python. It is distributed as a single file module and has no dependencies other than the Python Standard Library.
-- [Get Started](http://bottlepy.org/docs/dev/index.html)
-- [Development blog](http://blog.bottlepy.org/)
+This repo contains the source code for the Jamie Samoyed site, which is deployed as a web app on Microsoft Azure. The site is built on [Bottle](http://bottlepy.org/docs/dev/index.html), a lightweight WSGI framework for Python.
+
+To deploy an instance of this site to your own Azure account, click on this button and follow the instructions:
+
+[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
+
+You can follow Jamie Samoyed on [Facebook](https://www.facebook.com/JamieSamoyed/) or [Flickr](https://www.flickr.com/photos/dogerino/), and I also post photos of Jamie and Alice on Instagram occasionally.
