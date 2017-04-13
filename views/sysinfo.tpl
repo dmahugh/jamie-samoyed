@@ -33,7 +33,7 @@
 </tr>
 <tr>
   <th>Free disk space:</th>
-  <td>{{ disk_free }}</td>
+  <td>{{! disk_free }}</td>
 </tr>
 <tr>
   <th valign="top">Installed packages:</th>

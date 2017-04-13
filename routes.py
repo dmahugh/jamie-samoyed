@@ -55,6 +55,8 @@ def sysinfo():
     py_ver = sys.version.strip().split(' ')[0] + \
         (' (64-bit)' if '64 bit' in sys.version else ' (32-bit)')
     total, _, free = shutil.disk_usage('/')
+    free_space = '{0}% &mdash; {1} bytes free'. \
+        format(int(100*free/total), format(free, ','))
 
     return dict(
         title='System Information',
@@ -63,8 +65,7 @@ def sysinfo():
         py_loc=sys.prefix,
         os_version=platform.platform(),
         disk_total=format(total, ','),
-        disk_free=format(free, ',') + \
-            ' ({0}% of {1} total)'.format(int(100*free/total), format(total, ',')),
+        disk_free=free_space,
         host_name=socket.gethostname(),
         ip_addr=socket.gethostbyname(socket.gethostname()),
         home_dir=os.getcwd(),
