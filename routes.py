@@ -70,7 +70,7 @@ def sysinfo():
         home_dir=os.getcwd(),
         runtime_txt=open('runtime.txt', 'r').read() \
             if os.path.isfile('runtime.txt') else '',
-        installed_pkgs='<br/>'.join([_ for _ in freeze.freeze()]),
+        pkg_list=[_ for _ in freeze.freeze()],
         sys_path='<br/>'.join(sys.path)
     )
 

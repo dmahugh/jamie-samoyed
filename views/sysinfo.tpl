@@ -37,7 +37,11 @@
 </tr>
 <tr>
   <th valign="top">Installed packages:</th>
-  <td>{{! installed_pkgs }}</td>
+  <td><ul>
+  %for pkgname in pkg_list:
+    <li>{{ pkgname }}</li>
+  %end
+  </ul></td>
 </tr>
 <tr>
   <th valign="top">Python&nbsp;search&nbsp;path:</th>
