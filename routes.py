@@ -33,7 +33,17 @@ def contact():
 @route('/about')
 @view('about')
 def about():
-    """About page displays Python configuration info."""
+    """About page."""
+    return dict(
+        title='About',
+        message='About page content.',
+        year=datetime.now().year
+    )
+
+@route('/sysinfo')
+@view('sysinfo')
+def sysinfo():
+    """Display runtime environment info."""
     total, used, free = shutil.disk_usage('/')
     if os.path.isfile('runtime.txt'):
         runtime_txt = '<br/><b>runtime.txt:</b> ' + open('runtime.txt', 'r').read()
