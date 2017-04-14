@@ -22,6 +22,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li><a href="/friends">Friends</a></li>
+                    <li><a href="/friends">Travel</a></li>
+                    <li><a href="/friends">Seattle</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/sysinfo">sysinfo</a></li>
                 </ul>

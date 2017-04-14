@@ -9,36 +9,26 @@ from bottle import route, view, template
 @view('index')
 def home():
     """Renders the home page."""
-    return dict(
-        year=datetime.now().year
-    )
+    return dict(year=datetime.now().year)
 
 @route('/about')
 @view('about')
 def about():
     """About page."""
-    return dict(
-        title='About',
-        year=datetime.now().year
-    )
-
-@route('/alice')
-@view('alice')
-def alice():
-    """Raising Alice page."""
-    return dict(
-        title='Raising Alice',
-        year=datetime.now().year
-    )
+    return dict(title='About', year=datetime.now().year)
 
 @route('/friends')
 @view('friends')
 def friends():
     """Friends page."""
     return dict(
-        title='Friends of Jamie & Alice',
-        year=datetime.now().year
-    )
+        title='Friends', year=datetime.now().year)
+
+@route('/seattle')
+@view('seattle')
+def seattle():
+    """Seattle page."""
+    return dict(title='Seattle', year=datetime.now().year)
 
 @route('/sysinfo')
 #@view('sysinfo')
@@ -49,9 +39,6 @@ def sysinfo():
 @route('/travel')
 @view('travel')
 def travel():
-    """Travel Adventures page."""
-    return dict(
-        title='Travel Adventures',
-        year=datetime.now().year
-    )
+    """Travel page."""
+    return dict(title='Travel', year=datetime.now().year)
 
