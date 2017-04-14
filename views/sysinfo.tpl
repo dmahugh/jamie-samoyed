@@ -28,38 +28,37 @@ hr {height:1px;
    }
 </style>
 
-<h2>System Information</h2>
-
 <table>
-  <tr><th valign="top">Python version:</th>
+  <tr><td></td><td><h3>Python Configuration</h3></td></tr>
+  <tr><th valign="top">Version:</th>
     <td>{{ py_version }}</td></tr>
-  <tr><th>Python location:</th>
+  <tr><th>Location:</th>
     <td>{{ sys.prefix }}</td></tr>
-  <tr><th>Installed packages:</th>
+  <tr><th>Packages:</th>
     <td>{{! '<br/>'.join([_ for _ in freeze.freeze()]) }}</td></tr>
-  <tr><th>Python&nbsp;search&nbsp;path:</th>
+  <tr><th>Search path:</th>
     <td>{{! '<br/>'.join(sys.path) }}</td></tr>
-  <tr><td colspan=2><hr/></td></tr>
-   <tr><th>Working directory:</th>
-    <td>{{ os.getcwd() }}</td></tr>
-   <tr><th>Files in root:</th>
-    <td>{{ ', '.join([_ for _ in os.listdir() if os.path.isfile(_)]) }}</td></tr>
-  <tr><th>runtime.txt:</th>
-    <td>{{ open('runtime.txt', 'r').read() if os.path.isfile('runtime.txt') else '' }}</td></tr>
-  <tr><th>requirements.txt:</th>
-    <td>{{ open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else '' }}</td></tr>
-  <tr><td colspan=2><hr/></td></tr>
-  <tr><th>Operating system:</th>
+  <tr><td></td><td><h3>Operating System</h3></td></tr>
+  <tr><th>Version:</th>
     <td>{{ platform.platform() }}</td></tr>
   <tr><th>Host machine:</th>
     <td>{{ socket.gethostname() }}</td></tr>
   <tr><th>IP address:</th>
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>
-  <tr><th>Free disk space:</th>
+  <tr><th>Free&nbsp;disk&nbsp;space:</th>
     <td>{{! free_space }}</td></tr>
-  <tr><td colspan=2><hr/></td></tr>
-  <tr><th>bottle.py locations:</th>
+  <tr><td></td><td><h3>Root Folder</h3></td></tr>
+   <tr><th>Directory:</th>
+    <td>{{ os.getcwd() }}</td></tr>
+   <tr><th>Files:</th>
+    <td>{{ ', '.join([_ for _ in os.listdir() if os.path.isfile(_)]) }}</td></tr>
+  <tr><th>runtime.txt:</th>
+    <td>{{ open('runtime.txt', 'r').read() if os.path.isfile('runtime.txt') else '' }}</td></tr>
+  <tr><th>requirements.txt:</th>
+    <td>{{ open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else '' }}</td></tr>
+  <tr><td></td><td><h3>File Locations</h3></td></tr>
+  <tr><th>bottle.py:</th>
     <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
-  <tr><th>dougerino.py locations:</th>
+  <tr><th>dougerino.py:</th>
     <td>{{! '<br/>'.join(sub_dir('dougerino.py'))}}</td></tr>
 </table>
