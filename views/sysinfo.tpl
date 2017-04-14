@@ -14,18 +14,12 @@
 %     format(bytecount(free), int(100*free/total), bytecount(total))
 
 <style>
-th {padding: 2px;
-    text-align: right;
+th {text-align: right;
     vertical-align: text-top
     }
 td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
-    padding: 2px;
     vertical-align: text-top
     }
-hr {height:1px;
-    border:none;
-    background-color:#888;
-   }
 </style>
 
 <table>
