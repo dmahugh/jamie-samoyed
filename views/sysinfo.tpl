@@ -44,8 +44,8 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>
   <tr><th>Free&nbsp;disk&nbsp;space:</th>
     <td>{{! free_space }}</td></tr>
-  <tr><td colspan=2><h3>Root Folder</h3></td></tr>
-   <tr><th>Directory:</th>
+  <tr><td colspan=2><h3>Working Directory</h3></td></tr>
+   <tr><th>Path:</th>
     <td>{{ os.getcwd() }}</td></tr>
    <tr><th>Files:</th>
     <td>{{ ', '.join([_ for _ in os.listdir() if os.path.isfile(_)]) }}</td></tr>
