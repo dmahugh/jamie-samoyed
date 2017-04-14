@@ -2,7 +2,7 @@
 Routes and views for the bottle application.
 """
 from datetime import datetime
-from bottle import route, view
+from bottle import route, view, template
 
 @route('/')
 @route('/home')
@@ -41,10 +41,10 @@ def friends():
     )
 
 @route('/sysinfo')
-@view('sysinfo')
+#@view('sysinfo')
 def sysinfo():
     """Display runtime environment info."""
-    pass # all functionality is in the sysinfo.tpl template
+    return template('sysinfo.tpl')
 
 @route('/travel')
 @view('travel')
