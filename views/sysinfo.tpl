@@ -23,7 +23,7 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
 </style>
 
 <table>
-  <tr><td></td><td><h3>Python Configuration</h3></td></tr>
+  <tr><td colspan=2><h3>Python Configuration</h3></td></tr>
   <tr><th valign="top">Version:</th>
     <td>{{ py_version }}</td></tr>
   <tr><th>Location:</th>
@@ -32,7 +32,7 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{! '<br/>'.join([_ for _ in freeze.freeze()]) }}</td></tr>
   <tr><th>Search path:</th>
     <td>{{! '<br/>'.join(sys.path) }}</td></tr>
-  <tr><td></td><td><h3>Operating System</h3></td></tr>
+  <tr><td colspan=2><h3>Operating System</h3></td></tr>
   <tr><th>Version:</th>
     <td>{{ platform.platform() }}</td></tr>
   <tr><th>Host machine:</th>
@@ -41,7 +41,7 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>
   <tr><th>Free&nbsp;disk&nbsp;space:</th>
     <td>{{! free_space }}</td></tr>
-  <tr><td></td><td><h3>Root Folder</h3></td></tr>
+  <tr><td colspan=2><h3>Root Folder</h3></td></tr>
    <tr><th>Directory:</th>
     <td>{{ os.getcwd() }}</td></tr>
    <tr><th>Files:</th>
@@ -50,7 +50,7 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{ open('runtime.txt', 'r').read() if os.path.isfile('runtime.txt') else '' }}</td></tr>
   <tr><th>requirements.txt:</th>
     <td>{{ open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else '' }}</td></tr>
-  <tr><td></td><td><h3>File Locations</h3></td></tr>
+  <tr><td colspan=2><h3>File Locations</h3></td></tr>
   <tr><th>bottle.py:</th>
     <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
   <tr><th>dougerino.py:</th>
