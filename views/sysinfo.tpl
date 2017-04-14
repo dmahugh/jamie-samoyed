@@ -53,9 +53,4 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{! runtime_txt }}</td></tr>
   <tr><th>requirements.txt:</th>
     <td>{{! requirements_txt }}</td></tr>
-  <tr><td colspan=2><h3>File Locations</h3></td></tr>
-  <tr><th>bottle.py:</th>
-    <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
-  <tr><th>dougerino.py:</th>
-    <td>{{! '<br/>'.join(sub_dir('dougerino.py'))}}</td></tr>
 </table>
