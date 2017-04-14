@@ -9,7 +9,7 @@
 <div class="row">
     <div class="col-md-4">
         <h2>Travel Adventures</h2>
-        <p>Follow Jamie and Alice to some of their favorite destinations.</p>
+        <p>Jamie and Alice at some of their favorite destinations.</p>
         <p><a class="btn btn-default" href="/travel">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
@@ -19,7 +19,7 @@
     </div>
     <div class="col-md-4">
         <h2>Raising Alice</h2>
-        <p>Alice has been raised by Jamie and a team of cats, and it really shows sometimes.</p>
+        <p>Alice is unusual in ways that took a village.</p>
         <p><a class="btn btn-default" href="/alice">Learn more &raquo;</a></p>
     </div>
 </div>
