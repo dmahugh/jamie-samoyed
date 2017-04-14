@@ -9,7 +9,7 @@ Jamie and Alice are Samoyeds who live in Seattle, Washington. They are active on
 <p>
 Jamie and Alice have traveled extensively around the Western US and Canada: they've swam in the Pacific Ocean and the Gulf of Mexico, they've climbed peaks in the Cascade Mountains, Rockie Mountains, and other ranges, and they've traveled as far east as Atlanta, and as far north as Yellowknife in the Northwest Territories, where they've seen the northern lights.</p>
 
-They go to work at Microsoft every day, where they sleep in nice cool underground parking garages between long walks on the trails around the Redmond campus. On the weekends, Jamie and Alice often go hiking in the Cascade Mountains (as picted below).
+They go to work at Microsoft every day, where they sleep in nice cool underground parking garages between long walks on the trails around the Redmond campus. On the weekends, Jamie and Alice often go hiking in the Cascade Mountains (as pictured below).
 </p>
 
 <p>
