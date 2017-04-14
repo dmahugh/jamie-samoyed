@@ -1,6 +1,6 @@
 # Jamie Samoyed
 
-This repo contains the source code for the Jamie Samoyed site, which is deployed as a web app on Microsoft Azure. The site is built on [Bottle](http://bottlepy.org/docs/dev/index.html), a lightweight WSGI framework for Python.
+This repo contains the source code for the [Jamie Samoyed site](http://jamiesamoyed.azurewebsites.net/), which is deployed as a web app on Microsoft Azure. The site is built on [Bottle](http://bottlepy.org/docs/dev/index.html), a lightweight WSGI framework for Python.
 
 To deploy an instance of this site to your own Azure account, click on this button and follow the instructions:
 
