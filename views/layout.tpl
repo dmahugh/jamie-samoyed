@@ -36,7 +36,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p style="font-size: .8em">Copyright &copy; {{ year }} Doug Mahugh. Source repo: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
+            <p>Copyright &copy; {{ year }} Doug Mahugh. Source repo: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
         </footer>
     </div>
 
