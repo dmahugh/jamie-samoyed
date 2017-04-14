@@ -9,7 +9,7 @@
 % py_version = sys.version.strip().split(' ')[0] + \
 %     (' (64-bit)' if '64 bit' in sys.version else ' (32-bit)')
 % total, _, free = shutil.disk_usage('/')
-% free_space = '{0}% &mdash; {1} bytes free'. \
+% free_space = '{0}% <i>({1} bytes free)</i>'. \
 %     format(int(100*free/total), format(free, ','))
 
 <style>
