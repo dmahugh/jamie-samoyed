@@ -6,12 +6,12 @@
 % import sys
 % import shutil
 % from pip.operations import freeze
-% from dougerino import sub_dir
+% from dougerino import sub_dir, bytecount
 % py_version = sys.version.strip().split(' ')[0] + \
 %     (' (64-bit)' if '64 bit' in sys.version else ' (32-bit)')
 % total, _, free = shutil.disk_usage('/')
-% free_space = '{0}% <i>({1} bytes free)</i>'. \
-%     format(int(100*free/total), format(free, ','))
+% free_space = '{0} ({1}% of {2} total)'. \
+%     format(bytecount(free), int(100*free/total), bytecount(total))
 
 <style>
 th {padding: 2px;
@@ -22,14 +22,15 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     padding: 2px;
     vertical-align: text-top
     }
+hr {height:1px;
+    border:none;
+    background-color:#888;
+   }
 </style>
 
 <h2>System Information</h2>
 
 <table>
-  <tr><th>Copies of bottle.py:</th>
-    <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
-  <tr><td colspan=2><hr/></td></tr>
   <tr><th valign="top">Python version:</th>
     <td>{{ py_version }}</td></tr>
   <tr><th>Python location:</th>
@@ -56,4 +57,9 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>
   <tr><th>Free disk space:</th>
     <td>{{! free_space }}</td></tr>
+  <tr><td colspan=2><hr/></td></tr>
+  <tr><th>bottle.py locations:</th>
+    <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
+  <tr><th>dougerino.py locations:</th>
+    <td>{{! '<br/>'.join(sub_dir('dougerino.py'))}}</td></tr>
 </table>
