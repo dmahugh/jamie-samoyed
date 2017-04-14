@@ -6,6 +6,7 @@
 % import sys
 % import shutil
 % from pip.operations import freeze
+% from dougerino import sub_dir
 % py_version = sys.version.strip().split(' ')[0] + \
 %     (' (64-bit)' if '64 bit' in sys.version else ' (32-bit)')
 % total, _, free = shutil.disk_usage('/')
@@ -32,6 +33,8 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{ sys.prefix }}</td></tr>
   <tr><th>Installed packages:</th>
     <td>{{! '<br/>'.join([_ for _ in freeze.freeze()]) }}</td></tr>
+  <tr><th>Copies of bottle.py:</th>
+    <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
   <tr><th>Python&nbsp;search&nbsp;path:</th>
     <td>{{! '<br/>'.join(sys.path) }}</td></tr>
   <tr><td colspan=2><hr/></td></tr>
