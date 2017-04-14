@@ -12,6 +12,9 @@
 % total, _, free = shutil.disk_usage('/')
 % free_space = '{0} ({1}% of {2} total)'. \
 %     format(bytecount(free), int(100*free/total), bytecount(total))
+% runtime_txt = open('runtime.txt', 'r').read() if os.path.isfile('runtime.txt') else ''
+% requirements_txt = open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else ''
+% requirements_txt = requirements_txt.replace('\n', '<br/>')
 
 <style>
 th {text-align: right;
@@ -47,9 +50,9 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
    <tr><th>Files:</th>
     <td>{{ ', '.join([_ for _ in os.listdir() if os.path.isfile(_)]) }}</td></tr>
   <tr><th>runtime.txt:</th>
-    <td>{{ open('runtime.txt', 'r').read() if os.path.isfile('runtime.txt') else '' }}</td></tr>
+    <td>{{! runtime_txt }}</td></tr>
   <tr><th>requirements.txt:</th>
-    <td>{{ open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else '' }}</td></tr>
+    <td>{{! requirements_txt }}</td></tr>
   <tr><td colspan=2><h3>File Locations</h3></td></tr>
   <tr><th>bottle.py:</th>
     <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
