@@ -36,7 +36,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p>Copyright &copy; {{ year }} Doug Mahugh. Source repo: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
+            <p>Copyright &copy; {{ year }} Doug Mahugh. All Rights Reserved. Source: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
         </footer>
     </div>
 
