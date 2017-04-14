@@ -27,14 +27,15 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
 <h2>System Information</h2>
 
 <table>
+  <tr><th>Copies of bottle.py:</th>
+    <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
+  <tr><td colspan=2><hr/></td></tr>
   <tr><th valign="top">Python version:</th>
     <td>{{ py_version }}</td></tr>
   <tr><th>Python location:</th>
     <td>{{ sys.prefix }}</td></tr>
   <tr><th>Installed packages:</th>
     <td>{{! '<br/>'.join([_ for _ in freeze.freeze()]) }}</td></tr>
-  <tr><th>Copies of bottle.py:</th>
-    <td>{{! '<br/>'.join(sub_dir('bottle.py'))}}</td></tr>
   <tr><th>Python&nbsp;search&nbsp;path:</th>
     <td>{{! '<br/>'.join(sys.path) }}</td></tr>
   <tr><td colspan=2><hr/></td></tr>
