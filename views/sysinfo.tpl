@@ -14,7 +14,7 @@
 %     format(bytecount(free), int(100*free/total), bytecount(total))
 % runtime_txt = open('runtime.txt', 'r').read() if os.path.isfile('runtime.txt') else ''
 % requirements_txt = open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else ''
-% requirements_txt = requirements_txt.replace('\n', '<br/>')
+% requirements_txt = requirements_txt.strip().replace('\n', '<br/>')
 
 <style>
 th {text-align: right;
