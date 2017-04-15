@@ -12,3 +12,4 @@
 <p><img src="/static/images/seattle/seattle06.jpg" align="center" class="img-responsive"/></p>
 <p><img src="/static/images/seattle/seattle07.jpg" align="center" class="img-responsive"/></p>
 <p><img src="/static/images/seattle/seattle08.jpg" align="center" class="img-responsive"/></p>
+<p><img src="/static/images/seattle/seattle09.jpg" align="center" class="img-responsive"/></p>
