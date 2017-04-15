@@ -9,3 +9,5 @@
 <p><img src="/static/images/friends/friends05.jpg" align="center" class="img-responsive"/></p>
 <p><img src="/static/images/friends/friends06.jpg" align="center" class="img-responsive"/></p>
 <p><img src="/static/images/friends/friends07.jpg" align="center" class="img-responsive"/></p>
+<p><img src="/static/images/friends/friends08.jpg" align="center" class="img-responsive"/></p>
+<p><img src="/static/images/friends/friends09.jpg" align="center" class="img-responsive"/></p>
