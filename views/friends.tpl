@@ -10,3 +10,4 @@
 <p><img src="/static/images/friends/friends04.jpg" align="center" class="img-responsive"/></p>
 <p><img src="/static/images/friends/friends05.jpg" align="center" class="img-responsive"/></p>
 <p><img src="/static/images/friends/friends06.jpg" align="center" class="img-responsive"/></p>
+<p><img src="/static/images/friends/friends07.jpg" align="center" class="img-responsive"/></p>
