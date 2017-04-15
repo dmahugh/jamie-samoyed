@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title=title, year=year)
+% rebase('layout.tpl', title='Seattle')
 
 <h2>Seattle</h2>
 

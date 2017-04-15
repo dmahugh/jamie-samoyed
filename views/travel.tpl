@@ -1,4 +1,4 @@
-% rebase('layout.tpl', title=title, year=year)
+% rebase('layout.tpl', title='Travel')
 
 <h2>Travel</h2>
 

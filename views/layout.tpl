@@ -1,3 +1,5 @@
+% from datetime import datetime
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,7 +38,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p>Copyright &copy; {{ year }} Doug Mahugh. All Rights Reserved. Source: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
+            <p>Copyright &copy; {{ datetime.now().year }} Doug Mahugh. All Rights Reserved. Source: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
         </footer>
     </div>
 

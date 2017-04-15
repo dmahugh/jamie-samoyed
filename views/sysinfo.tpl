@@ -1,5 +1,4 @@
-% from datetime import datetime
-% rebase('layout.tpl', title='System Information', year=datetime.now().year)
+% rebase('layout.tpl', title='sysinfo')
 % import os
 % import platform
 % import socket

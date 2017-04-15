@@ -1,6 +1,8 @@
 """
 Routes and views for the bottle application.
 """
+import json
+
 from datetime import datetime
 from bottle import route, view, template
 
@@ -9,26 +11,28 @@ from bottle import route, view, template
 @view('index')
 def home():
     """Renders the home page."""
-    return dict(year=datetime.now().year)
+    return dict()
 
 @route('/about')
 @view('about')
 def about():
     """About page."""
-    return dict(title='About', year=datetime.now().year)
+    return dict()
 
 @route('/friends')
 @view('friends')
 def friends():
     """Friends page."""
-    return dict(
-        title='Friends', year=datetime.now().year)
+    files = [photo['filename'] for photo in \
+        json.loads(open('static/json/photos.json').read()) \
+        if photo['album'] == 'friends']
+    return dict(photos=files)
 
 @route('/seattle')
 @view('seattle')
 def seattle():
     """Seattle page."""
-    return dict(title='Seattle', year=datetime.now().year)
+    return dict()
 
 @route('/sysinfo')
 #@view('sysinfo')
@@ -40,5 +44,4 @@ def sysinfo():
 @view('travel')
 def travel():
     """Travel page."""
-    return dict(title='Travel', year=datetime.now().year)
-
+    return dict()

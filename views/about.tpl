@@ -1,6 +1,6 @@
-% rebase('layout.tpl', title=title, year=year)
+% rebase('layout.tpl', title='About')
 
-<h2>{{ title }}</h2>
+<h2>About</h2>
 
 <p>
 Jamie and Alice are Samoyeds who live in Seattle, Washington. You can follow them on <a href="https://www.facebook.com/JamieSamoyed/">Facebook</a> or <a href="https://www.flickr.com/photos/dogerino/">Flickr</a>.
