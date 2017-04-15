@@ -2,146 +2,175 @@
     {
         "filename": "friends01.jpg",
         "album": "friends",
-        "caption": "Resevoir Dogs with Sophie & Vino &mdash; Kelseyville, California"
+        "location": "Kelseyville, California",
+        "caption": "Resevoir dogs with Sophie & Vino"
     },
     {
         "filename": "friends02.jpg",
         "album": "friends",
-        "caption": "Inter River Park &mdash; North Vancouver, Canada"
+        "location": "North Vancouver, British Columbia",
+        "caption": "Inter River Park"
     },
     {
         "filename": "friends03.jpg",
         "album": "friends",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "friends04.jpg",
         "album": "friends",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "friends05.jpg",
         "album": "friends",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "friends06.jpg",
         "album": "friends",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "friends07.jpg",
         "album": "friends",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "friends08.jpg",
         "album": "friends",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "friends09.jpg",
         "album": "friends",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle01.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle02.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle03.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle04.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle05.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle06.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle07.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle08.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "seattle09.jpg",
         "album": "seattle",
+        "location": "///",
         "caption": "///"
     },
     {
         "filename": "travel01.jpg",
         "album": "travel",
-        "caption": "Pacific Ocean beach &mdash; Crescent City, California"
+        "location": "Crescent City, California",
+        "caption": "early morning on a Pacific Ocean beach"
     },
     {
         "filename": "travel02.jpg",
         "album": "travel",
-        "caption": "A romp in the Gulf of Mexico &mdash; Gulfport, Mississippi"
+        "location": "Gulfport, Mississippi",
+        "caption": "Playing in the Gulf of Mexico"
     },
     {
         "filename": "travel03.jpg",
         "album": "travel",
-        "caption": "Whistler Summit &mdash; Alberta, Canada"
+        "location": "Alberta, Canada",
+        "caption": "Whistler Summit"
     },
     {
         "filename": "travel04.jpg",
         "album": "travel",
-        "caption": "Golden Gate Bridge &mdash; San Francisco, California"
+        "location": "San Francisco, California",
+        "caption": "Golden Gate Bridge"
     },
     {
         "filename": "travel05.jpg",
         "album": "travel",
-        "caption": "On the Beartooth Plateau &mdash; Montana"
+        "location": "Southeastern Montana",
+        "caption": "On the Beartooth Plateau"
     },
     {
         "filename": "travel06.jpg",
         "album": "travel",
-        "caption": "Busse Woods Forest Preserve &mdash; Chicago, Illinois"
+        "location": "near Chicago, Illinois",
+        "caption": "Busse Woods Forest Preserve"
     },
     {
         "filename": "travel07.jpg",
         "album": "travel",
-        "caption": "Missouri Headwaters State Park &mdash; Montana"
+        "location": "Montana",
+        "caption": "Missouri Headwaters State Park"
     },
     {
         "filename": "travel08.jpg",
         "album": "travel",
-        "caption": "Hiking in the Rockies &mdash; Colorado"
+        "location": "Colorado",
+        "caption": "Hiking in the Rocky Mountains"
     },
     {
         "filename": "travel09.jpg",
         "album": "travel",
-        "caption": "Playtime at the Missouri River &mdash; Sioux City, Nebraska"
+        "location": "Sioux City, Nebraska",
+        "caption": "Along the shore of the Missouri River"
     },
     {
         "filename": "travel10.jpg",
         "album": "travel",
-        "caption": "Lake of the Woods &mdash; Oregon"
+        "location": "Oregon Cascades",
+        "caption": "Lake of the Woods"
     },
     {
         "filename": "travel11.jpg",
         "album": "travel",
-        "caption": "Athabasca River &mdash; Jasper National Park, Canada"
+        "location": "Jasper National Park, Canada",
+        "caption": "Athabasca River"
     }
 ]

@@ -14,34 +14,34 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="/static/photos/travel01.jpg" alt="Travel - xxx">
+      <img src="/static/photos/travel01.jpg" alt="Crescent City, California">
       <div class="carousel-caption">
-        <h3>Travel - xxx</h3>
-        <p>/// caption for travel01 ///</p>
+        <h3>Crescent City, California</h3>
+        <p>early morning on a Pacific Ocean beach</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="/static/photos/travel02.jpg" alt="Travel - xxx">
+      <img src="/static/photos/travel02.jpg" alt="Gulfport, Mississippi">
       <div class="carousel-caption">
-        <h3>travel - xxx</h3>
-        <p>/// caption for travel02 ///</p>
+        <h3>Gulfport, Mississippi</h3>
+        <p>Playing in the Gulf of Mexico</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="/static/photos/travel03.jpg" alt="Travel - xxx">
+      <img src="/static/photos/travel03.jpg" alt="Alberta, Canada">
       <div class="carousel-caption">
-        <h3>travel - xxx</h3>
-        <p>/// caption for travel03 ///</p>
+        <h3>Alberta, Canada</h3>
+        <p>Approaching the top of Whistler Summit</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="/static/photos/travel04.jpg" alt="Travel - xxx">
+      <img src="/static/photos/travel04.jpg" alt="San Francisco, California">
       <div class="carousel-caption">
-        <h3>travel - xxx</h3>
-        <p>/// caption for travel04 ///</p>
+        <h3>San Francisco, California</h3>
+        <p>Golden Gate Bridge</p>
       </div>
     </div>
 
