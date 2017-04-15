@@ -13,3 +13,4 @@
 <p><img src="/static/images/travel/travel07.jpg" align="center" class="img-responsive"/></p>
 <p><img src="/static/images/travel/travel08.jpg" align="center" class="img-responsive"/></p>
 <p><img src="/static/images/travel/travel09.jpg" align="center" class="img-responsive"/></p>
+<p><img src="/static/images/travel/travel10.jpg" align="center" class="img-responsive"/></p>
