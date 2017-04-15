@@ -32,7 +32,10 @@ def friends():
 @view('seattle')
 def seattle():
     """Seattle page."""
-    return dict()
+    files = [photo['filename'] for photo in \
+        json.loads(open('static/json/photos.json').read()) \
+        if photo['album'] == 'seattle']
+    return dict(photos=files)
 
 @route('/sysinfo')
 #@view('sysinfo')
@@ -44,4 +47,7 @@ def sysinfo():
 @view('travel')
 def travel():
     """Travel page."""
-    return dict()
+    files = [photo['filename'] for photo in \
+        json.loads(open('static/json/photos.json').read()) \
+        if photo['album'] == 'travel']
+    return dict(photos=files)
