@@ -48,8 +48,8 @@ input[type="checkbox"].input-validation-error {
 
 h2.caption { 
    position: absolute; 
-   top: 30px; 
-   left: 30px; 
+   top: 1vw; 
+   left: 1vw; 
    width: 100%; 
 }
 
@@ -62,7 +62,7 @@ h2 span {
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
-   padding: 10px; 
+   padding: .5vw; 
 }
 
 h2 span.spacer {
