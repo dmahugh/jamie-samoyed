@@ -2,11 +2,10 @@
 
 <h2>Travel</h2>
 
+% for filename in photos:
 <div class="photo">
-  <img src="/static/photos/travel01.jpg" alt="Pacific Ocean beach" align="center" class="img-responsive">
-  <h2 class="caption"><span>Crescent City, CA<span class="spacer"></span><br/><span class="spacer"></span>Pacific Ocean beach</span></h2>
+  <img src="/static/photos/{{ filename }}" alt="Pacific Ocean beach" align="center" class="img-responsive">
+  <h2 class="caption"><span>///location<span class="spacer"></span><br/><span class="spacer"></span>/// caption</span></h2>
 </div>
 
-% for filename in photos:
-<p><img src="/static/photos/{{ filename }}" align="center" class="img-responsive"/></p>
 
