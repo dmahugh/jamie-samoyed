@@ -1,6 +1,6 @@
-% rebase('layout.tpl', title=album)
+% rebase('layout.tpl', title=album_id)
 
-<h2>{{ album.upper() }} photo album</h2>
+<h2>{{ album_id }} photo album</h2>
 
 % for filename in photos:
 <div class="photo">
