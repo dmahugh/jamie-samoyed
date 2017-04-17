@@ -25,15 +25,17 @@ def album(topic):
     albumdict = get_albums()
     if not topic.lower() in albumdict:
         return '***ERROR*** UNKNOWN ALBUM: ' + topic
-    return dict(album_id=topic.lower())
+    return dict(album_id=topic.lower(), albumdata=albumdict)
 
-def get_album(album_id):
+def get_album(album_id, albumdict=None):
     """For specified album id, return (name, description, photos).
+    albumdict is optional; can be passed to avoid re-creating it.
     Photos are returned as an ordered list of tuples containing
     (filename, location, caption) for each photo.
     """
     print('>>> get_album(' + album_id + ') <<<')
-    albumdict = get_albums()
+    if not albumdict:
+        albumdict = get_albums()
     if album_id in albumdict:
         name = albumdict[album_id]['name']
         desc = albumdict[album_id]['description']

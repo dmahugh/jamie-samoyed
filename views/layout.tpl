@@ -25,9 +25,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    % albums = get_albums()
-                    % for album in albums:
-                    <li><a href="/album/{{ album }}">{{ albums[album]['name'] }}</a></li>
+                    % albumdict = albumdict if 'albumdict' in locals() else get_albums()
+                    % for album in albumdict:
+                    <li><a href="/album/{{ album }}">{{ albumdict[album]['name'] }}</a></li>
                     % end
                     <li><a href="/about">About</a></li>
                     <li><a href="/sysinfo">sysinfo</a></li>

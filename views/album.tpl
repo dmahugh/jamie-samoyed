@@ -1,6 +1,6 @@
+% rebase('layout.tpl', title=album_id, albumdict=albumdata)
 % from routes import get_album
-% name, desc, photos = get_album(album_id)
-% rebase('layout.tpl', title=album_id)
+% name, desc, photos = get_album(album_id, albumdata)
 
 <h2>{{ name }}</h2>
 
