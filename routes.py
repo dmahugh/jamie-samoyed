@@ -22,6 +22,9 @@ def about():
 @view('album')
 def album(topic):
     """Album pages."""
+    albumdict = json.loads(open('static/json/albums.json').read())
+    if not topic.lower() in albumdict:
+        return '***ERROR*** UNKNOWN ALBUM: ' + topic
     return dict(album_id=topic.lower())
 
 def get_album(album_id):
@@ -29,10 +32,10 @@ def get_album(album_id):
     Photos are returned as an ordered list of tuples containing
     (filename, location, caption) for each photo.
     """
-    albumdata = json.loads(open('static/json/albums.json').read())
-    if album_id in albumdata:
-        name = albumdata[album_id]['name']
-        desc = albumdata[album_id]['description']
+    albumdict = json.loads(open('static/json/albums.json').read())
+    if album_id in albumdict:
+        name = albumdict[album_id]['name']
+        desc = albumdict[album_id]['description']
     else:
         name = 'UNKNOWN ALBUM: ' + album_id
         desc = ''
