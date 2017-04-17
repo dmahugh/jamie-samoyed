@@ -19,6 +19,18 @@ def about():
     """About page."""
     return dict()
 
+@route('/album/<albumname>')
+@view('album')
+def album(albumname):
+    """Album pages."""
+    #/// handle case sensitivity
+    #/// validate album name against albums.json, if not valid return error with
+    #    a list of links to valid albums
+    files = [photo['filename'] for photo in \
+        json.loads(open('static/json/photos.json').read()) \
+        if photo['album'] == albumname]
+    return dict(photos=files, album=albumname)
+
 @route('/friends')
 @view('friends')
 def friends():

@@ -24,9 +24,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/seattle">Seattle</a></li>
-                    <li><a href="/travel">Travel</a></li>
-                    <li><a href="/friends">Friends</a></li>
+                    <li><a href="/album/seattle">Seattle</a></li>
+                    <li><a href="/album/travel">Travel</a></li>
+                    <li><a href="/album/friends">Friends</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/sysinfo">sysinfo</a></li>
                 </ul>
@@ -38,7 +38,11 @@
         {{!base}}
         <hr />
         <footer>
-            <p>Copyright &copy; {{ datetime.now().year }} Doug Mahugh. All Rights Reserved. Source: <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a></p>
+            <p>
+            Deployed from <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a>
+            <br/>
+            All photos Copyright &copy; {{ datetime.now().year }} Doug Mahugh. All Rights Reserved.
+            </p>
         </footer>
     </div>
 
