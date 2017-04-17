@@ -3,7 +3,6 @@ Routes and views for the bottle application.
 """
 import json
 
-from datetime import datetime
 from bottle import route, view, template
 
 @route('/')
@@ -28,8 +27,10 @@ def album(topic):
         if photo['album'] == topic.lower()]
     return dict(photos=files, album_id=topic.lower())
 
+def get_album():
+    print('>>> get_album() called <<<')
+
 @route('/sysinfo')
-#@view('sysinfo')
 def sysinfo():
     """Display runtime environment info."""
     return template('sysinfo.tpl')
