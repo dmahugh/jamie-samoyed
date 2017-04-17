@@ -33,7 +33,6 @@ def get_album(album_id, albumdict=None):
     Photos are returned as an ordered list of tuples containing
     (filename, location, caption) for each photo.
     """
-    print('>>> get_album(' + album_id + ') <<<')
     if not albumdict:
         albumdict = get_albums()
     if album_id in albumdict:
@@ -53,7 +52,6 @@ def get_album(album_id, albumdict=None):
 
 def get_albums():
     """Create dictionary of album metadata from albums.json."""
-    print('>>> get_albums() <<<')
     return json.loads(open('static/json/albums.json').read())
 
 @route('/sysinfo')
