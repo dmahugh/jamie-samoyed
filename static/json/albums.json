@@ -1,17 +1,17 @@
-[
-    {
-        "id": "friends",
-        "name": "Friends of Jamie & Alice",
-        "description": "Photos of Jamie and Alice playing with their friends."
-    },
-    {
-        "id": "seattle",
-        "name": "Around Seattle",
-        "description": "Photos of Jamie and Alice exploring their Seattle home."
-    },
-    {
-        "id": "travel",
-        "name": "Travel Photos",
-        "description": "Photos of Jamie and Alice on road trips around North America."
-    }
-]
+{
+    "friends":
+        {
+            "name": "Friends of Jamie & Alice",
+            "description": "Photos of Jamie and Alice playing with their friends."
+        },
+    "seattle":
+        {
+            "name": "Around Seattle",
+            "description": "Photos of Jamie and Alice exploring their Seattle home."
+        },
+    "travel":
+        {
+            "name": "Travel Photos",
+            "description": "Photos of Jamie and Alice on road trips around North America."
+        }
+}
