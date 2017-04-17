@@ -3,7 +3,7 @@ Routes and views for the bottle application.
 """
 import json
 
-from bottle import route, view, template
+from bottle import route, view, template, error
 
 @route('/about')
 @view('about')
@@ -19,6 +19,12 @@ def album(topic): #----------------------------------------------------------<<<
     if not topic.lower() in albumdict:
         return '***ERROR*** UNKNOWN ALBUM: ' + topic
     return dict(album_id=topic.lower(), albumdata=albumdict)
+
+@error(404) # this function will be invoked for HTTP status code 404 errors
+@view('404error')
+def custom404handler(error): #-----------------------------------------------<<<
+    """Custom handler for 404 errors."""
+    return dict(error=error)
 
 def get_album(album_id, albumdict=None): #-----------------------------------<<<
     """For specified album id, return (name, description, photos).
