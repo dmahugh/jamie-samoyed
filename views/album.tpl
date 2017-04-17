@@ -9,5 +9,5 @@
 % for photo in photos:
 <div class="photo">
   <img src="/static/photos/{{ photo[0] }}" alt="{{ photo[1] }}" class="img-responsive" />
-  <p>{{ photo[2] + ' @ ' + photo[1] }}</p>
+  <p>{{! photo[2] + (' &mdash; ' if photo[1] and photo[2] else '') + photo[1] }}</p>
 </div>
