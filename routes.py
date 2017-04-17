@@ -5,29 +5,22 @@ import json
 
 from bottle import route, view, template
 
-@route('/')
-@route('/home')
-@view('index')
-def home():
-    """Renders the home page."""
-    return dict()
-
 @route('/about')
 @view('about')
-def about():
+def about(): #---------------------------------------------------------------<<<
     """About page."""
     return dict()
 
 @route('/album/<topic>')
 @view('album')
-def album(topic):
+def album(topic): #----------------------------------------------------------<<<
     """Album pages."""
     albumdict = get_albums()
     if not topic.lower() in albumdict:
         return '***ERROR*** UNKNOWN ALBUM: ' + topic
     return dict(album_id=topic.lower(), albumdata=albumdict)
 
-def get_album(album_id, albumdict=None):
+def get_album(album_id, albumdict=None): #-----------------------------------<<<
     """For specified album id, return (name, description, photos).
     albumdict is optional; can be passed to avoid re-creating it.
     Photos are returned as an ordered list of tuples containing
@@ -50,11 +43,18 @@ def get_album(album_id, albumdict=None):
                            photo['caption']))
     return (name, desc, photos)
 
-def get_albums():
+def get_albums(): #----------------------------------------------------------<<<
     """Create dictionary of album metadata from albums.json."""
     return json.loads(open('static/json/albums.json').read())
 
+@route('/')
+@route('/home')
+@view('index')
+def home(): #----------------------------------------------------------------<<<
+    """Renders the home page."""
+    return dict()
+
 @route('/sysinfo')
-def sysinfo():
+def sysinfo(): #-------------------------------------------------------------<<<
     """Display runtime environment info."""
     return template('sysinfo.tpl')
