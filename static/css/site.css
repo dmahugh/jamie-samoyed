@@ -54,3 +54,8 @@ div.photo {
     margin-right: 0;
     margin-bottom: 10px;
 }
+
+div.photo p {
+    margin: 5px 0 0 20px;
+    padding-bottom: 10px;
+}
