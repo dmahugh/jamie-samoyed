@@ -22,7 +22,7 @@ def about():
 @view('album')
 def album(topic):
     """Album pages."""
-    albumdict = json.loads(open('static/json/albums.json').read())
+    albumdict = get_albums()
     if not topic.lower() in albumdict:
         return '***ERROR*** UNKNOWN ALBUM: ' + topic
     return dict(album_id=topic.lower())
@@ -32,7 +32,8 @@ def get_album(album_id):
     Photos are returned as an ordered list of tuples containing
     (filename, location, caption) for each photo.
     """
-    albumdict = json.loads(open('static/json/albums.json').read())
+    print('>>> get_album(' + album_id + ') <<<')
+    albumdict = get_albums()
     if album_id in albumdict:
         name = albumdict[album_id]['name']
         desc = albumdict[album_id]['description']
@@ -47,6 +48,11 @@ def get_album(album_id):
                            photo['location'],
                            photo['caption']))
     return (name, desc, photos)
+
+def get_albums():
+    """Create dictionary of album metadata from albums.json."""
+    print('>>> get_albums() <<<')
+    return json.loads(open('static/json/albums.json').read())
 
 @route('/sysinfo')
 def sysinfo():

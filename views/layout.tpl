@@ -1,4 +1,5 @@
 % from datetime import datetime
+% from routes import get_albums
 
 <!DOCTYPE html>
 <html>
@@ -24,9 +25,10 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/album/seattle">Seattle</a></li>
-                    <li><a href="/album/travel">Travel</a></li>
-                    <li><a href="/album/friends">Friends</a></li>
+                    % albums = get_albums()
+                    % for album in albums:
+                    <li><a href="/album/{{ album }}">{{ albums[album]['name'] }}</a></li>
+                    % end
                     <li><a href="/about">About</a></li>
                     <li><a href="/sysinfo">sysinfo</a></li>
                 </ul>
