@@ -1,1 +1,2 @@
-hello 
+The presence of this file tells Azure to not do its own Python virtual environment management.
+We're deploying our own environment in the /env folder.
