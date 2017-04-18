@@ -238,5 +238,11 @@
         "album": "hiking",
         "location": "Alpine Lakes Wilderness Area",
         "caption": "Source Lake Trail"
+    },
+    {
+        "filename": "hiking12-middleforktrail.jpg",
+        "album": "hiking",
+        "location": "",
+        "caption": "Middle Fork Snoqualmie River Trail"
     }
 ]
