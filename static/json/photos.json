@@ -172,5 +172,71 @@
         "album": "travel",
         "location": "Jasper National Park, Canada",
         "caption": "Athabasca River"
+    },
+    {
+        "filename": "hiking01-skylinedivide.jpg",
+        "album": "hiking",
+        "location": "North Cascades",
+        "caption": "Skyline Divide Trail"
+    },
+    {
+        "filename": "hiking02-frenchmancoulee.jpg",
+        "album": "hiking",
+        "location": "Old Vantage Highway",
+        "caption": "Frenchman Coulee"
+    },
+    {
+        "filename": "hiking03-bessemermtn.jpg",
+        "album": "hiking",
+        "location": "Middle Fork Valley",
+        "caption": "Bessemer Mountain Road"
+    },
+    {
+        "filename": "hiking04-gallaherheadlaketrail.jpg",
+        "album": "hiking",
+        "location": "Wenatchee National Forest",
+        "caption": "Gallaher Head Lake Trail"
+    },
+    {
+        "filename": "hiking05-saukmtn.jpg",
+        "album": "hiking",
+        "location": "North Cascades",
+        "caption": "Sauk Mountain"
+    },
+    {
+        "filename": "hiking06-taylorrivertrail.jpg",
+        "album": "hiking",
+        "location": "Middle Fork Valley",
+        "caption": "Taylor River Trail"
+    },
+    {
+        "filename": "hiking07-earlpeak.jpg",
+        "album": "hiking",
+        "location": "Cascade Mountains",
+        "caption": "Earl Peak"
+    },
+    {
+        "filename": "hiking08-rattlesnakeledge.jpg",
+        "album": "hiking",
+        "location": "",
+        "caption": "Rattlesnake Ledge"
+    },
+    {
+        "filename": "hiking09-cripplecreektrail.jpg",
+        "album": "hiking",
+        "location": "Middle Fork Valley",
+        "caption": "Cripple Creek Trail"
+    },
+    {
+        "filename": "hiking10-snowlake.jpg",
+        "album": "hiking",
+        "location": "Alpine Lakes Wilderness Area",
+        "caption": "Snow Lake"
+    },
+    {
+        "filename": "hiking11-sourcelake.jpg",
+        "album": "hiking",
+        "location": "Alpine Lakes Wilderness Area",
+        "caption": "Source Lake Trail"
     }
 ]

@@ -13,5 +13,10 @@
         {
             "name": "Travel Photos",
             "description": "Photos of Jamie and Alice on road trips around North America."
+        },
+    "hiking":
+        {
+            "name": "Favorite Hikes",
+            "description": "Photos of Jamie and Alice on some of their favorite trails."
         }
 }
