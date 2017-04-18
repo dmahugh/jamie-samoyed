@@ -2,12 +2,13 @@
 
 <h2>Unknown album: {{ missing }}</h2>
 
-<img src="/static/images/albumunknown.jpg" class="img-responsive"/>
+<table>
+<tr><td><img src="/static/images/albumunknown.jpg" class="img-responsive"/></td></tr>
 
-<p>Try one of these albums instead:</p>
+<tr><td>Try one of these albums instead:</td></tr>
 
 % for album in albums:
-  <p><a href="/album/{{ album }}" class="btn btn-primary btn-responsive" role="button" width="400">{{ albums[album]['name'] }}</a></p>
+  <tr><td style="padding: 4px"><a href="/album/{{ album }}" class="btn btn-primary" role="button" style="width: 100%">{{ albums[album]['name'] }}</a></td></tr>
 % end
 
 </table>
