@@ -7,7 +7,7 @@
 <p>Try one of these albums instead:</p>
 
 % for album in albums:
-  <p><a href="/album/{{ album }}" class="btn btn-primary btn-responsive width400px" role="button" width="400">{{ albums[album]['name'] }}</a></p>
+  <p><a href="/album/{{ album }}" class="btn btn-primary btn-responsive" role="button" width="400">{{ albums[album]['name'] }}</a></p>
 % end
 
 </table>
