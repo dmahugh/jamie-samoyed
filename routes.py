@@ -17,7 +17,8 @@ def album(topic): #----------------------------------------------------------<<<
     """Album pages."""
     albumdict = get_albums()
     if not topic.lower() in albumdict:
-        return '***ERROR*** UNKNOWN ALBUM: ' + topic
+        return template('albumunknown.tpl', missing=topic, albums=albumdict)
+        return '***ERROR*** album not found: ' + topic
     return dict(album_id=topic.lower(), albumdata=albumdict)
 
 @error(404) # this function will be invoked for HTTP status code 404 errors

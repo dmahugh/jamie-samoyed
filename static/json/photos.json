@@ -20,8 +20,8 @@
     {
         "filename": "friends04.jpg",
         "album": "friends",
-        "location": "Redmond, WA",
-        "caption": "Marymoor dog park"
+        "location": "Marymoor dog park",
+        "caption": ""
     },
     {
         "filename": "friends05.jpg",
@@ -32,79 +32,79 @@
     {
         "filename": "friends06.jpg",
         "album": "friends",
-        "location": "",
+        "location": "Marymoor dog park",
         "caption": ""
     },
     {
         "filename": "friends07.jpg",
         "album": "friends",
         "location": "",
-        "caption": ""
+        "caption": "entertaining guest from Montana: Luna, Levon, Noodles, Coco"
     },
     {
         "filename": "friends08.jpg",
         "album": "friends",
-        "location": "",
-        "caption": ""
+        "location": "Seward Park, Seattle",
+        "caption": "Furry 5K"
     },
     {
         "filename": "friends09.jpg",
         "album": "friends",
-        "location": "",
-        "caption": ""
+        "location": "Oregon Cascades",
+        "caption": "with Moxie & Brio's family"
     },
     {
         "filename": "seattle01.jpg",
         "album": "seattle",
-        "location": "",
-        "caption": ""
+        "location": "Seattle, WA",
+        "caption": "first photo of Jamie in Seattle"
     },
     {
         "filename": "seattle02.jpg",
         "album": "seattle",
-        "location": "",
+        "location": "Pike Place Market",
         "caption": ""
     },
     {
         "filename": "seattle03.jpg",
         "album": "seattle",
-        "location": "",
+        "location": "Kubota Garden",
         "caption": ""
     },
     {
         "filename": "seattle04.jpg",
         "album": "seattle",
-        "location": "",
+        "location": "Marine View Park",
         "caption": ""
     },
     {
         "filename": "seattle05.jpg",
         "album": "seattle",
-        "location": "",
+        "location": "Westlake Center",
         "caption": ""
     },
     {
         "filename": "seattle06.jpg",
         "album": "seattle",
-        "location": "",
+        "location": "Renton",
         "caption": ""
     },
     {
         "filename": "seattle07.jpg",
         "album": "seattle",
-        "location": "",
+        "location": "Jose P. Rizal Bridge",
         "caption": ""
     },
     {
         "filename": "seattle08.jpg",
         "album": "seattle",
-        "location": "",
+        "location": "Seward Park",
         "caption": ""
     },
     {
         "filename": "seattle09.jpg",
         "album": "seattle",
-        "location": "",
+        "location": "Normandy Park beach",
         "caption": ""
     },
     {
