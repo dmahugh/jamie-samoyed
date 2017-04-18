@@ -40,7 +40,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p class="copyright">All photos copyright &copy; {{ datetime.now().year }} Doug Mahugh. All Rights Reserved.</p>
+            <p class="copyright">All photos copyright &copy; 2010-2017 by Doug Mahugh. All Rights Reserved.</p>
         </footer>
     </div>
 
