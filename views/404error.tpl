@@ -4,4 +4,4 @@
 
 <p>Are you <i>sure</i> about that URL? We can't find it!</p>
 
-<p><img src="/static/images/404error.jpg" align="center" class="img-responsive"/></p>
+<p><img src="/static/images/404error.jpg" class="img-responsive"/></p>

@@ -40,11 +40,7 @@
         {{!base}}
         <hr />
         <footer>
-            <p>
-            Deployed from <a href="https://github.com/dmahugh/jamie-samoyed">https://github.com/dmahugh/jamie-samoyed</a>
-            <br/>
-            All photos Copyright &copy; {{ datetime.now().year }} Doug Mahugh. All Rights Reserved.
-            </p>
+            <p class="copyright">All photos copyright &copy; {{ datetime.now().year }} Doug Mahugh. All Rights Reserved.</p>
         </footer>
     </div>
 
