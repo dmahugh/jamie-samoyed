@@ -25,7 +25,7 @@ def album(topic): #----------------------------------------------------------<<<
 @view('404error')
 def custom404handler(error): #-----------------------------------------------<<<
     """Custom handler for 404 errors."""
-    return dict(error=error)
+    return dict(err=error)
 
 def get_album(album_id, albumdict=None): #-----------------------------------<<<
     """For specified album id, return (name, description, photos).
