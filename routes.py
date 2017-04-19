@@ -3,7 +3,7 @@ Routes and views for the bottle application.
 """
 import json
 
-from bottle import route, view, template, error
+from bottle import route, view, template, error, response, get
 
 @route('/about')
 @view('about')
@@ -25,6 +25,22 @@ def album(albumno): #--------------------------------------------------------<<<
 def api(): #-----------------------------------------------------------------<<<
     """API home page."""
     return dict()
+
+@get('/api/album')
+def api_album(): #-----------------------------------------------------------<<<
+    """Handler for GET /API/ALBUM endpoint.
+    """
+    response.headers['Content-Type'] = 'application/json'
+    response.headers['Cache-Control'] = 'no-cache'
+    return json.loads(open('static/json/albums.json').read())
+
+@get('/api/photo')
+def api_photo(): #-----------------------------------------------------------<<<
+    """Handler for GET /API/PHOTO endpoint.
+    """
+    response.headers['Content-Type'] = 'application/json'
+    response.headers['Cache-Control'] = 'no-cache'
+    return json.loads(open('static/json/photos.json').read())
 
 @error(404) # this function will be invoked for HTTP status code 404 errors
 @view('404error')
