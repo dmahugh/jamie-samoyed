@@ -53,6 +53,7 @@ def api_album_by_id(identifier): #-------------------------------------------<<<
     response.headers['Cache-Control'] = 'no-cache'
     retval = albumdict[albumno]
     retval['albumno'] = albumno # add albumno to returned dictionary
+    retval['photos'] = photo_list(albumno) # add list of photos
     return retval
 
 @get('/api/photo')
@@ -86,15 +87,7 @@ def get_album(albumno, albumdict=None): #-----------------------------------<<<
         name = 'UNKNOWN ALBUM: ' + albumno
         desc = ''
 
-    photos = []
-    photodata = json.loads(open('static/json/photos.json').read())
-    for photono in photodata:
-        if photodata[photono]['albumno'] == albumno:
-            photos.append((photono,
-                           photodata[photono]['filename'],
-                           photodata[photono]['location'],
-                           photodata[photono]['caption']))
-    return (slug, name, desc, photos)
+    return (slug, name, desc, photo_list(albumno))
 
 def get_albums(): #----------------------------------------------------------<<<
     """Create dictionary of album metadata from albums.json."""
@@ -106,6 +99,20 @@ def get_albums(): #----------------------------------------------------------<<<
 def home(): #----------------------------------------------------------------<<<
     """Renders the home page."""
     return dict()
+
+def photo_list(albumno): #---------------------------------------------------<<<
+    """Return list of photos for specified album.
+    Return list contains tuples of (photono, filename, location, caption)
+    """
+    photodata = json.loads(open('static/json/photos.json').read())
+    photolist = []
+    for photono in photodata:
+        if photodata[photono]['albumno'] == albumno:
+            photolist.append((photono,
+                              photodata[photono]['filename'],
+                              photodata[photono]['location'],
+                              photodata[photono]['caption']))
+    return photolist
 
 @route('/sysinfo')
 def sysinfo(): #-------------------------------------------------------------<<<

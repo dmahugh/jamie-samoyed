@@ -80,4 +80,5 @@ div.photo p {
 .api-samples tr td {
     padding: 5px;
     border-bottom: 1px solid #888888;
+    font-family: Consolas,Monaco,Lucida Console,Courier New, monospace;
 }

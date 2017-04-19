@@ -19,7 +19,7 @@
 th {text-align: right;
     vertical-align: text-top
     }
-td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
+td {font-family: Consolas,Monaco,Lucida Console,Courier New, monospace;
     vertical-align: text-top
     }
 </style>
