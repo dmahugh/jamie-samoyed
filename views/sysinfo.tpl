@@ -54,4 +54,6 @@ td {font-family:Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{! requirements_txt }}</td></tr>
 </table>
 
+<hr />
+
 <p><img src="/static/images/sysinfo.jpg" align="center" class="img-responsive"/></p>
