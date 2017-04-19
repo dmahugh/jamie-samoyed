@@ -20,6 +20,12 @@ def album(albumno): #--------------------------------------------------------<<<
         return template('albumunknown.tpl', missing=albumno, albums=albumdict)
     return dict(albumno=albumno, albumdata=albumdict)
 
+@route('/api')
+@view('api')
+def api(): #-----------------------------------------------------------------<<<
+    """API home page."""
+    return dict()
+
 @error(404) # this function will be invoked for HTTP status code 404 errors
 @view('404error')
 def custom404handler(error): #-----------------------------------------------<<<
