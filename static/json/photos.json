@@ -1,287 +1,287 @@
 {
     "100001":
         {
-            "filename": "friends01.jpg",
+            "filename": "ResevoirDogs.jpg",
             "albumno": "100001",
             "location": "Kelseyville, California",
             "caption": "Resevoir dogs with Sophie & Vino"
         },
     "100002":
         {
-            "filename": "friends02.jpg",
+            "filename": "InterRiverPark01.jpg",
             "albumno": "100001",
             "location": "North Vancouver, British Columbia",
             "caption": "Inter River Park"
         },
     "100003":
         {
-            "filename": "friends03.jpg",
+            "filename": "JamieMerlin2016.jpg",
             "albumno": "100001",
             "location": "",
             "caption": ""
         },
     "100004":
         {
-            "filename": "friends04.jpg",
+            "filename": "Marymoor01.jpg",
             "albumno": "100001",
             "location": "Marymoor dog park",
             "caption": ""
         },
     "100005":
         {
-            "filename": "friends05.jpg",
+            "filename": "Magnuson01.jpg",
             "albumno": "100001",
             "location": "Magnuson Dog Park",
             "caption": "Seamus, Reggie, Moxie & Jamie"
         },
     "100006":
         {
-            "filename": "friends06.jpg",
+            "filename": "Marymoor02.jpg",
             "albumno": "100001",
             "location": "Marymoor dog park",
             "caption": ""
         },
     "100007":
         {
-            "filename": "friends07.jpg",
+            "filename": "EntertainingGuests.jpg",
             "albumno": "100001",
             "location": "",
             "caption": "entertaining guest from Montana: Luna, Levon, Noodles, Coco"
         },
     "100008":
         {
-            "filename": "friends08.jpg",
+            "filename": "Furry5K01.jpg",
             "albumno": "100001",
             "location": "Seward Park, Seattle",
             "caption": "Furry 5K"
         },
     "100009":
         {
-            "filename": "friends09.jpg",
+            "filename": "OregonMeetup.jpg",
             "albumno": "100001",
             "location": "Oregon Cascades",
             "caption": "with Moxie & Brio's family"
         },
     "100010":
         {
-            "filename": "seattle01.jpg",
+            "filename": "MarineViewPark01.jpg",
             "albumno": "100002",
-            "location": "Seattle, WA",
-            "caption": "first photo of Jamie in Seattle"
+            "location": "Marine View Park",
+            "caption": ""
         },
     "100011":
         {
-            "filename": "seattle02.jpg",
+            "filename": "PikePlaceMarket01.jpg",
             "albumno": "100002",
             "location": "Pike Place Market",
             "caption": ""
         },
     "100012":
         {
-            "filename": "seattle03.jpg",
+            "filename": "KubotaGarden01.jpg",
             "albumno": "100002",
             "location": "Kubota Garden",
             "caption": ""
         },
     "100013":
         {
-            "filename": "seattle04.jpg",
+            "filename": "JamieDay1.jpg",
             "albumno": "100002",
-            "location": "Marine View Park",
-            "caption": ""
+            "location": "Seattle, WA",
+            "caption": "first photo of Jamie in Seattle"
         },
     "100014":
         {
-            "filename": "seattle05.jpg",
+            "filename": "Westlake01.jpg",
             "albumno": "100002",
             "location": "Westlake Center",
             "caption": ""
         },
     "100015":
         {
-            "filename": "seattle06.jpg",
+            "filename": "Renton01.jpg",
             "albumno": "100002",
             "location": "Renton",
             "caption": ""
         },
     "100016":
         {
-            "filename": "seattle07.jpg",
+            "filename": "JoseRizal01.jpg",
             "albumno": "100002",
             "location": "Jose P. Rizal Bridge",
             "caption": ""
         },
     "100017":
         {
-            "filename": "seattle08.jpg",
+            "filename": "SewardPark01.jpg",
             "albumno": "100002",
             "location": "Seward Park",
             "caption": ""
         },
     "100018":
         {
-            "filename": "seattle09.jpg",
+            "filename": "MarineViewPark02.jpg",
             "albumno": "100002",
             "location": "Normandy Park beach",
             "caption": ""
         },
     "100019":
         {
-            "filename": "travel01.jpg",
+            "filename": "CrescentCity01.jpg",
             "albumno": "100003",
             "location": "Crescent City, California",
             "caption": "early morning on a Pacific Ocean beach"
         },
     "100020":
         {
-            "filename": "travel02.jpg",
+            "filename": "Gulfport01.jpg",
             "albumno": "100003",
             "location": "Gulfport, Mississippi",
             "caption": "Playing in the Gulf of Mexico"
         },
     "100021":
         {
-            "filename": "travel03.jpg",
+            "filename": "WhistlerSummit01.jpg",
             "albumno": "100003",
             "location": "Alberta, Canada",
             "caption": "Whistler Summit"
         },
     "100022":
         {
-            "filename": "travel04.jpg",
+            "filename": "GoldenGate01.jpg",
             "albumno": "100003",
             "location": "San Francisco, California",
             "caption": "Golden Gate Bridge"
         },
     "100023":
         {
-            "filename": "travel05.jpg",
+            "filename": "Beartooth01.jpg",
             "albumno": "100003",
             "location": "Southeastern Montana",
             "caption": "On the Beartooth Plateau"
         },
     "100024":
         {
-            "filename": "travel06.jpg",
+            "filename": "ChicagoDeer.jpg",
             "albumno": "100003",
             "location": "near Chicago, Illinois",
             "caption": "Busse Woods Forest Preserve"
         },
     "100025":
         {
-            "filename": "travel07.jpg",
+            "filename": "MissouriHeadwaters01.jpg",
             "albumno": "100003",
             "location": "Montana",
             "caption": "Missouri Headwaters State Park"
         },
     "100026":
         {
-            "filename": "travel08.jpg",
+            "filename": "Colorado01.jpg",
             "albumno": "100003",
             "location": "Colorado",
             "caption": "Hiking in the Rocky Mountains"
         },
     "100027":
         {
-            "filename": "travel09.jpg",
+            "filename": "SiouxCity01.jpg",
             "albumno": "100003",
             "location": "Sioux City, Nebraska",
             "caption": "Along the shore of the Missouri River"
         },
     "100028":
         {
-            "filename": "travel10.jpg",
+            "filename": "LakeOfTheWoods01.jpg",
             "albumno": "100003",
             "location": "Oregon Cascades",
             "caption": "Lake of the Woods"
         },
     "100029":
         {
-            "filename": "travel11.jpg",
+            "filename": "AthabascaRiver01.jpg",
             "albumno": "100003",
             "location": "Jasper National Park, Canada",
             "caption": "Athabasca River"
         },
     "100030":
         {
-            "filename": "hiking01-skylinedivide.jpg",
+            "filename": "SkylineDivide01.jpg",
             "albumno": "100004",
             "location": "North Cascades",
             "caption": "Skyline Divide Trail"
         },
     "100031":
         {
-            "filename": "hiking02-frenchmancoulee.jpg",
+            "filename": "OldVantageHighway01.jpg",
             "albumno": "100004",
             "location": "Old Vantage Highway",
             "caption": "Frenchman Coulee"
         },
     "100032":
         {
-            "filename": "hiking03-bessemermtn.jpg",
+            "filename": "Bessemer01.jpg",
             "albumno": "100004",
             "location": "Middle Fork Valley",
             "caption": "Bessemer Mountain Road"
         },
     "100033":
         {
-            "filename": "hiking04-gallaherheadlaketrail.jpg",
+            "filename": "GallaherHead01.jpg",
             "albumno": "100004",
             "location": "Wenatchee National Forest",
             "caption": "Gallaher Head Lake Trail"
         },
     "100034":
         {
-            "filename": "hiking05-saukmtn.jpg",
+            "filename": "SaukMountain01.jpg",
             "albumno": "100004",
             "location": "North Cascades",
             "caption": "Sauk Mountain"
         },
     "100035":
         {
-            "filename": "hiking06-taylorrivertrail.jpg",
+            "filename": "TaylorRiver01.jpg",
             "albumno": "100004",
             "location": "Middle Fork Valley",
             "caption": "Taylor River Trail"
         },
     "100036":
         {
-            "filename": "hiking07-earlpeak.jpg",
+            "filename": "EarlPeak01.jpg",
             "albumno": "100004",
             "location": "Cascade Mountains",
             "caption": "Earl Peak"
         },
     "100037":
         {
-            "filename": "hiking08-rattlesnakeledge.jpg",
+            "filename": "RattlesnakeLedge01.jpg",
             "albumno": "100004",
             "location": "",
             "caption": "Rattlesnake Ledge"
         },
     "100038":
         {
-            "filename": "hiking09-cripplecreektrail.jpg",
+            "filename": "CrippleCreek01.jpg",
             "albumno": "100004",
             "location": "Middle Fork Valley",
             "caption": "Cripple Creek Trail"
         },
     "100039":
         {
-            "filename": "hiking10-snowlake.jpg",
+            "filename": "SnowLake01.jpg",
             "albumno": "100004",
             "location": "Alpine Lakes Wilderness Area",
             "caption": "Snow Lake"
         },
     "100040":
         {
-            "filename": "hiking11-sourcelake.jpg",
+            "filename": "SourceLake01.jpg",
             "albumno": "100004",
             "location": "Alpine Lakes Wilderness Area",
             "caption": "Source Lake Trail"
         },
     "100041":
         {
-            "filename": "hiking12-middleforktrail.jpg",
+            "filename": "MiddleFork01.jpg",
             "albumno": "100004",
             "location": "",
             "caption": "Middle Fork Snoqualmie River Trail"
