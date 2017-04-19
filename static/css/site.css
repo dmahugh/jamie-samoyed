@@ -69,3 +69,15 @@ div.photo p {
 .width400px {
     width: 400px;
 }
+
+.api-samples tr th {
+    text-align: left;
+    padding: 5px;
+    border-bottom: 1px solid #888888;
+    background-color: #eeeeee;
+}
+
+.api-samples tr td {
+    padding: 5px;
+    border-bottom: 1px solid #888888;
+}
