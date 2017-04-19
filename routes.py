@@ -11,15 +11,14 @@ def about(): #---------------------------------------------------------------<<<
     """About page."""
     return dict()
 
-@route('/album/<topic>')
+@route('/album/<albumno>')
 @view('album')
-def album(topic): #----------------------------------------------------------<<<
+def album(albumno): #--------------------------------------------------------<<<
     """Album pages."""
     albumdict = get_albums()
-    if not topic.lower() in albumdict:
-        return template('albumunknown.tpl', missing=topic, albums=albumdict)
-        return '***ERROR*** album not found: ' + topic
-    return dict(album_id=topic.lower(), albumdata=albumdict)
+    if not albumno in albumdict:
+        return template('albumunknown.tpl', missing=albumno, albums=albumdict)
+    return dict(albumno=albumno, albumdata=albumdict)
 
 @error(404) # this function will be invoked for HTTP status code 404 errors
 @view('404error')
@@ -27,28 +26,32 @@ def custom404handler(error): #-----------------------------------------------<<<
     """Custom handler for 404 errors."""
     return dict(err=error)
 
-def get_album(album_id, albumdict=None): #-----------------------------------<<<
-    """For specified album id, return (name, description, photos).
+def get_album(albumno, albumdict=None): #-----------------------------------<<<
+    """For specified albumno, return (slug, name, description, photos).
     albumdict is optional; can be passed to avoid re-creating it.
     Photos are returned as an ordered list of tuples containing
-    (filename, location, caption) for each photo.
+    (photono, filename, location, caption) for each photo.
     """
+
     if not albumdict:
         albumdict = get_albums()
-    if album_id in albumdict:
-        name = albumdict[album_id]['name']
-        desc = albumdict[album_id]['description']
+    if albumno in albumdict:
+        slug = albumdict[albumno]['slug']
+        name = albumdict[albumno]['name']
+        desc = albumdict[albumno]['description']
     else:
-        name = 'UNKNOWN ALBUM: ' + album_id
+        name = 'UNKNOWN ALBUM: ' + albumno
         desc = ''
 
     photos = []
-    for photo in json.loads(open('static/json/photos.json').read()):
-        if photo['album'] == album_id:
-            photos.append((photo['filename'],
-                           photo['location'],
-                           photo['caption']))
-    return (name, desc, photos)
+    photodata = json.loads(open('static/json/photos.json').read())
+    for photono in photodata:
+        if photodata[photono]['albumno'] == albumno:
+            photos.append((photono,
+                           photodata[photono]['filename'],
+                           photodata[photono]['location'],
+                           photodata[photono]['caption']))
+    return (slug, name, desc, photos)
 
 def get_albums(): #----------------------------------------------------------<<<
     """Create dictionary of album metadata from albums.json."""

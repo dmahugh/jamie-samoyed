@@ -1,6 +1,6 @@
-% rebase('layout.tpl', title=album_id, albumdict=albumdata)
+% rebase('layout.tpl', title=albumno, albumdict=albumdata)
 % from routes import get_album
-% name, desc, photos = get_album(album_id, albumdata)
+% albumno, name, desc, photos = get_album(albumno, albumdata)
 
 <h2>{{ name }}</h2>
 
@@ -8,7 +8,7 @@
 
 % for photo in photos:
 <div class="photo">
-  <a href="/static/photos/{{ photo[0] }}">
-  <img src="/static/photos/{{ photo[0] }}" alt="{{ photo[1] }}" class="img-responsive" /></a>
-  <p>{{! photo[2] + (' &mdash; ' if photo[1] and photo[2] else '') + photo[1] }}</p>
+  <a href="/static/photos/{{ photo[1] }}">
+  <img src="/static/photos/{{ photo[1] }}" alt="{{ photo[2] }}" class="img-responsive" /></a>
+  <p>{{! photo[3] + (' &mdash; ' if photo[2] and photo[3] else '') + photo[2] }}</p>
 </div>

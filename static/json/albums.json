@@ -1,21 +1,25 @@
 {
-    "friends":
+    "100001":
         {
+            "slug": "friends",
             "name": "Fun with Friends",
             "description": "Photos of Jamie and Alice playing with friends."
         },
-    "seattle":
+    "100002":
         {
+            "slug": "seattle",
             "name": "Around Seattle",
             "description": "Photos of Jamie and Alice exploring their Seattle home."
         },
-    "travel":
+    "100003":
         {
+            "slug": "travel",
             "name": "Travel Photos",
             "description": "Photos of Jamie and Alice on road trips around North America."
         },
-    "hiking":
+    "100004":
         {
+            "slug": "hiking",
             "name": "Favorite Hikes",
             "description": "Photos of Jamie and Alice on some of their favorite trails."
         }
