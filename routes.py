@@ -64,6 +64,17 @@ def api_photo(): #-----------------------------------------------------------<<<
     response.headers['Cache-Control'] = 'no-cache'
     return json.loads(open('static/json/photos.json').read())
 
+@get('/api/photo/<photono>')
+def api_photono(photono): #--------------------------------------------------<<<
+    """Handler for GET /API/PHOTO/<photono> endpoint.
+    """
+    photos = json.loads(open('static/json/photos.json').read())
+    if not photono in photos:
+        return dict(errmsg='unknown photo identifier: ' + photono)
+    response.headers['Content-Type'] = 'application/json'
+    response.headers['Cache-Control'] = 'no-cache'
+    return photos[photono]
+
 @error(404) # this function will be invoked for HTTP status code 404 errors
 @view('404error')
 def custom404handler(error): #-----------------------------------------------<<<
