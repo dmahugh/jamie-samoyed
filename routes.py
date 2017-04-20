@@ -8,7 +8,7 @@ from bottle import route, view, template, error, response, get
 @route('/about')
 @view('about')
 def about(): #---------------------------------------------------------------<<<
-    """About page."""
+    """About page - about.tpl"""
     return dict()
 
 @route('/album/<albumno>')
