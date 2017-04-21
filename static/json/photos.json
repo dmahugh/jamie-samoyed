@@ -285,5 +285,12 @@
             "albumno": "100004",
             "location": "",
             "caption": "Middle Fork Snoqualmie River Trail"
+        },
+    "100042":
+        {
+            "filename": "/static/photos/BecklerPeak.jpg",
+            "albumno": "100003",
+            "location": "Baker-Snoqualmie National Forest",
+            "caption": "Beckler Peak"
         }
 }
