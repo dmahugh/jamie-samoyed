@@ -27,7 +27,7 @@
     <td>{{! '<br/>'.join(sys.path) }}</td></tr>
   <tr><th>OS version:</th>
     <td>{{ platform.platform() }}</td></tr>
-  <tr><th>Host machine name:</th>
+  <tr><th>Host&nbsp;machine&nbsp;name:</th>
     <td>{{ socket.gethostname() }}</td></tr>
   <tr><th>Serverc IP address:</th>
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>

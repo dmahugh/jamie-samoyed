@@ -88,9 +88,14 @@ table.sysinfo {
     border-spacing: 10px;
 }
 
-.sysinfo th {text-align: right;
+.sysinfo th, td {
     vertical-align: text-top;
-    }
-.sysinfo td {font-family: Consolas,Monaco,Lucida Console,Courier New, monospace;
-    vertical-align: text-top;
-    }
+    padding: 2px 2px 2px 8px;
+}
+
+.sysinfo th {
+    text-align: right;
+}
+.sysinfo td {
+    font-family: Consolas,Monaco,Lucida Console,Courier New, monospace;
+}
