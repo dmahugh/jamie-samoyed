@@ -64,6 +64,14 @@ def api_photo(): #-----------------------------------------------------------<<<
     response.headers['Cache-Control'] = 'no-cache'
     return json.loads(open('static/json/photos.json').read())
 
+@get('/api/photo.html')
+def api_photo_html(): #------------------------------------------------------<<<
+    """Pretty-printed HTML version of /API/PHOTO endpoint.
+    """
+    response.headers['Cache-Control'] = 'no-cache'
+    data = open('static/json/photos.json').read()
+    return template('prettyprint.tpl', pprint_json=data, api_route='/api/photo')
+
 @get('/api/photo/<photono>')
 def api_photono(photono): #--------------------------------------------------<<<
     """Handler for GET /API/PHOTO/<photono> endpoint.
