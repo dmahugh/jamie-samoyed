@@ -6,8 +6,8 @@
     <tr>
         <th>HTTP verb</th>
         <th>resource</th>
-        <th>example</th>
-        <th>example (pretty-printed HTML)</th>
+        <th>sample API call</th>
+        <th>pretty-printed HTML</th>
     </tr>
     <tr>
         <td>GET</td>
