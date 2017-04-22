@@ -23,13 +23,13 @@
     <td>{{ sys.prefix }}</td></tr>
   <tr><th>Python packages:</th>
     <td>{{! '<br/>'.join([_ for _ in freeze.freeze()]) }}</td></tr>
-  <tr><th>Python search path:</th>
+  <tr><th>Python&nbsp;search&nbsp;path:</th>
     <td>{{! '<br/>'.join(sys.path) }}</td></tr>
   <tr><th>OS version:</th>
     <td>{{ platform.platform() }}</td></tr>
   <tr><th>Host machine name:</th>
     <td>{{ socket.gethostname() }}</td></tr>
-  <tr><th>Server&nbsp;IP&nbsp;address:</th>
+  <tr><th>Serverc IP address:</th>
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>
   <tr><th>Client IP address:</th>
     <td>{{ client_ip }}</td></tr>
