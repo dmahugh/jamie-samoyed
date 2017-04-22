@@ -15,8 +15,9 @@
 % requirements_txt = open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else ''
 % requirements_txt = requirements_txt.strip().replace('\n', '<br/>')
 
+<h2>System Information</h2>
+
 <table class="sysinfo">
-  <tr><td colspan=2><h3>System Information</h3></td></tr>
   <tr><th valign="top">Python version:</th>
     <td>{{ py_version }}</td></tr>
   <tr><th>Python location:</th>
