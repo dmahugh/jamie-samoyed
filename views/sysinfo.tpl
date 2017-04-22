@@ -16,19 +16,18 @@
 % requirements_txt = requirements_txt.strip().replace('\n', '<br/>')
 
 <table class="sysinfo">
-  <tr><td colspan=2><h3>Python Configuration</h3></td></tr>
-  <tr><th valign="top">Version:</th>
+  <tr><td colspan=2><h3>System Information</h3></td></tr>
+  <tr><th valign="top">Python version:</th>
     <td>{{ py_version }}</td></tr>
-  <tr><th>Location:</th>
+  <tr><th>Python location:</th>
     <td>{{ sys.prefix }}</td></tr>
-  <tr><th>Packages:</th>
+  <tr><th>Python packages:</th>
     <td>{{! '<br/>'.join([_ for _ in freeze.freeze()]) }}</td></tr>
-  <tr><th>Search path:</th>
+  <tr><th>Python search path:</th>
     <td>{{! '<br/>'.join(sys.path) }}</td></tr>
-  <tr><td colspan=2><h3>Operating System</h3></td></tr>
-  <tr><th>Version:</th>
+  <tr><th>OS version:</th>
     <td>{{ platform.platform() }}</td></tr>
-  <tr><th>Host machine:</th>
+  <tr><th>Host machine name:</th>
     <td>{{ socket.gethostname() }}</td></tr>
   <tr><th>Server&nbsp;IP&nbsp;address:</th>
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>
@@ -36,8 +35,7 @@
     <td>{{ client_ip }}</td></tr>
   <tr><th>Free disk space:</th>
     <td>{{! free_space }}</td></tr>
-  <tr><td colspan=2><h3>Working Directory</h3></td></tr>
-   <tr><th>Path:</th>
+   <tr><th>Working directory:</th>
     <td>{{ os.getcwd() }}</td></tr>
    <tr><th>Files:</th>
     <td>{{ ', '.join([_ for _ in os.listdir() if os.path.isfile(_)]) }}</td></tr>
