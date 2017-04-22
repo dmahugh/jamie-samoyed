@@ -47,4 +47,4 @@
 
 <hr />
 
-<p><img src="/static/images/sysinfo.jpg" align="center" class="img-responsive"/></p>
+<p><a href="https://bottlepy.org/docs/dev/"><img src="/static/images/sysinfo.jpg" align="center" class="img-responsive"/></a></p>
