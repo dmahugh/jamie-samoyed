@@ -26,10 +26,13 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="/about">About</a></li>
+
+                    <!-- dynamically generate menu pads for photo albums -->
                     % albumdict = albumdict if 'albumdict' in locals() else get_albums()
                     % for album in albumdict:
                     <li><a href="/album/{{ album }}">{{ albumdict[album]['name'] }}</a></li>
                     % end
+
                     <li><a href="/api">API</a></li>
                     <li><a href="/sysinfo">sysinfo</a></li>
                 </ul>

@@ -3,7 +3,7 @@ Routes and views for the bottle application.
 """
 import json
 
-from bottle import route, view, template, error, response, get
+from bottle import error, get, request, response, route, template, view
 
 @route('/about')
 @view('about')
@@ -123,9 +123,10 @@ def photo_list(albumno): #---------------------------------------------------<<<
                               photodata[photono]['filename'],
                               photodata[photono]['location'],
                               photodata[photono]['caption']))
-    return photolist
+    return sorted(photolist, key=lambda _: _[1].upper()) # sort by filename
 
 @route('/sysinfo')
+@view('sysinfo')
 def sysinfo(): #-------------------------------------------------------------<<<
     """Display runtime environment info."""
-    return template('sysinfo.tpl')
+    return dict(client_ip=request.environ.get('REMOTE_ADDR'))

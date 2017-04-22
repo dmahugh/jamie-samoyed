@@ -15,7 +15,7 @@
         },
     "100003":
         {
-            "filename": "/static/photos/JamieMerlin2016.jpg",
+            "filename": "/static/photos/01-JamieMerlin2016.jpg",
             "albumno": "100001",
             "location": "",
             "caption": "Jamie & Merlin's birthday party"
@@ -289,7 +289,7 @@
     "100042":
         {
             "filename": "/static/photos/BecklerPeak.jpg",
-            "albumno": "100003",
+            "albumno": "100004",
             "location": "Baker-Snoqualmie National Forest",
             "caption": "Beckler Peak"
         }

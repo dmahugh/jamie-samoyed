@@ -82,3 +82,15 @@ div.photo p {
     border-bottom: 1px solid #888888;
     font-family: Consolas,Monaco,Lucida Console,Courier New, monospace;
 }
+
+table.sysinfo {
+    border-collapse: "separate";
+    border-spacing: 10px;
+}
+
+.sysinfo th {text-align: right;
+    vertical-align: text-top;
+    }
+.sysinfo td {font-family: Consolas,Monaco,Lucida Console,Courier New, monospace;
+    vertical-align: text-top;
+    }

@@ -15,16 +15,7 @@
 % requirements_txt = open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else ''
 % requirements_txt = requirements_txt.strip().replace('\n', '<br/>')
 
-<style>
-th {text-align: right;
-    vertical-align: text-top
-    }
-td {font-family: Consolas,Monaco,Lucida Console,Courier New, monospace;
-    vertical-align: text-top
-    }
-</style>
-
-<table>
+<table class="sysinfo">
   <tr><td colspan=2><h3>Python Configuration</h3></td></tr>
   <tr><th valign="top">Version:</th>
     <td>{{ py_version }}</td></tr>
@@ -39,9 +30,11 @@ td {font-family: Consolas,Monaco,Lucida Console,Courier New, monospace;
     <td>{{ platform.platform() }}</td></tr>
   <tr><th>Host machine:</th>
     <td>{{ socket.gethostname() }}</td></tr>
-  <tr><th>IP address:</th>
+  <tr><th>Server&nbsp;IP&nbsp;address:</th>
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>
-  <tr><th>Free&nbsp;disk&nbsp;space:</th>
+  <tr><th>Client IP address:</th>
+    <td>{{ client_ip }}</td></tr>
+  <tr><th>Free disk space:</th>
     <td>{{! free_space }}</td></tr>
   <tr><td colspan=2><h3>Working Directory</h3></td></tr>
    <tr><th>Path:</th>
