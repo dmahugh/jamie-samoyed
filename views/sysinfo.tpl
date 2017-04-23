@@ -5,7 +5,7 @@
 % import sys
 % import shutil
 % from pip.operations import freeze
-% from dougerino import sub_dir, bytecount
+% from misc import sub_dir, bytecount
 % py_version = sys.version.strip().split(' ')[0] + \
 %     (' (64-bit)' if '64 bit' in sys.version else ' (32-bit)')
 % total, _, free = shutil.disk_usage('/')

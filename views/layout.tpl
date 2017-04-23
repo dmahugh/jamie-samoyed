@@ -29,7 +29,7 @@
 
                     <!-- dynamically generate menu pads for photo albums -->
                     % albumdict = albumdict if 'albumdict' in locals() else get_albums()
-                    % for album in albumdict:
+                    % for album in sorted(albumdict):
                     <li><a href="/album/{{ album }}">{{ albumdict[album]['name'] }}</a></li>
                     % end
 

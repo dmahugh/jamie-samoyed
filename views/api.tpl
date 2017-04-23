@@ -7,7 +7,7 @@
         <th>HTTP verb</th>
         <th>resource</th>
         <th>sample API call</th>
-        <th>pretty-printed HTML</th>
+        <th>pretty-printed HTML version</th>
     </tr>
     <tr>
         <td>GET</td>
