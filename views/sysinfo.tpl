@@ -12,14 +12,14 @@
 % free_space = '{0} ({1}% of {2} total)'. \
 %     format(bytecount(free), int(100*free/total), bytecount(total))
 % runtime_txt = open('runtime.txt', 'r').read() if os.path.isfile('runtime.txt') else ''
-% requirements_txt = open('requirements.txt', 'r').read() if os.path.isfile('requirements.txt') else ''
-% requirements_txt = requirements_txt.strip().replace('\n', '<br/>')
 
 <h2>System Information</h2>
 
 <table class="sysinfo">
   <tr><th valign="top">Python version:</th>
     <td>{{ py_version }}</td></tr>
+  <tr><th>runtime.txt:</th>
+    <td>{{! runtime_txt }}</td></tr>
   <tr><th>Python location:</th>
     <td>{{ sys.prefix }}</td></tr>
   <tr><th>Python packages:</th>
@@ -30,20 +30,20 @@
     <td>{{ platform.platform() }}</td></tr>
   <tr><th>Host&nbsp;machine&nbsp;name:</th>
     <td>{{ socket.gethostname() }}</td></tr>
-  <tr><th>Serverc IP address:</th>
+  <tr><th>Processor:</th>
+    <td>{{ os.environ['PROCESSOR_ARCHITECTURE'] + ', ' + os.environ['PROCESSOR_IDENTIFIER'].split(' ')[0] }}</td></tr>
+  <tr><th># processors:</th>
+    <td>{{ os.environ['NUMBER_OF_PROCESSORS'] }}</td></tr>
+  <tr><th>Server IP address:</th>
     <td>{{ socket.gethostbyname(socket.gethostname()) }}</td></tr>
   <tr><th>Client IP address:</th>
     <td>{{ client_ip }}</td></tr>
-  <tr><th>Free disk space:</th>
-    <td>{{! free_space }}</td></tr>
    <tr><th>Working directory:</th>
     <td>{{ os.getcwd() }}</td></tr>
    <tr><th>Files:</th>
     <td>{{ ', '.join([_ for _ in os.listdir() if os.path.isfile(_)]) }}</td></tr>
-  <tr><th>runtime.txt:</th>
-    <td>{{! runtime_txt }}</td></tr>
-  <tr><th>requirements.txt:</th>
-    <td>{{! requirements_txt }}</td></tr>
+  <tr><th>Free disk space:</th>
+    <td>{{! free_space }}</td></tr>
 </table>
 
 <hr />
