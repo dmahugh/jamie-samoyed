@@ -5,7 +5,7 @@
 % runtime_txt = open('runtime.txt', 'r').read() if os.path.isfile('runtime.txt') else ''
 % free = int(sysdict['DISK_FREE'].replace(',', ''))
 % total = int(sysdict['DISK_SIZE'].replace(',', ''))
-% free_space = '{0} ({1}% of total)'. \
+% free_space = '{0} bytes ({1}% of total)'. \
 %     format(sysdict['DISK_FREE'], int(100*free/total))
 
 <h2>System Information</h2>

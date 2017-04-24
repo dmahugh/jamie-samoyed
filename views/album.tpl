@@ -8,8 +8,8 @@
 
 % for photo in photos:
 <div class="photo">
-  <a href="{{ photo[1] }}">
-  <img src="{{ photo[1] }}" alt="{{ photo[2] }}" class="img-responsive" /></a>
-  <p>{{! photo[3] + (' &mdash; ' if photo[2] and photo[3] else '') + photo[2] }}</p>
+  <a href="{{ photo['filename'] }}">
+  <img src="{{ photo['filename'] }}" alt="{{ photo['location'] }}" class="img-responsive" /></a>
+  <p>{{! photo['caption'] + (' &mdash; ' if photo['location'] and photo['caption'] else '') + photo['location'] }}</p>
 </div>
 % end

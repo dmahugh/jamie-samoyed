@@ -114,17 +114,17 @@ def bytecount(numbytes): #---------------------------------------------------<<<
 
 def photo_list(albumno): #---------------------------------------------------<<<
     """Return list of photos for specified album.
-    Return list contains tuples of (photono, filename, location, caption)
+    Returned list contains tuples of (photono, filename, location, caption)
     """
     photodata = json.loads(open('static/json/photos.json').read())
     photolist = []
     for photono in photodata:
         if photodata[photono]['albumno'] == albumno:
-            photolist.append((photono,
-                              photodata[photono]['filename'],
-                              photodata[photono]['location'],
-                              photodata[photono]['caption']))
-    return sorted(photolist, key=lambda _: _[1].upper()) # sort by filename
+            photolist.append(dict(photono=photono,
+                                  filename=photodata[photono]['filename'],
+                                  location=photodata[photono]['location'],
+                                  caption=photodata[photono]['caption']))
+    return sorted(photolist, key=lambda _: _['filename'].upper())
 
 def sub_dir(searchfor, folder=None): #---------------------------------------<<<
     """Find all occurrences of files matching a specified search pattern, in
