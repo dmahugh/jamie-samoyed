@@ -16,7 +16,6 @@ def api(): #-----------------------------------------------------------------<<<
 def api_album(): #-----------------------------------------------------------<<<
     """Handler for GET /API/ALBUM endpoint.
     """
-    response.headers['Content-Type'] = 'application/json'
     response.headers['Cache-Control'] = 'no-cache'
     return json.loads(open('static/json/albums.json').read())
 
@@ -56,21 +55,18 @@ def api_album_by_id(identifier): #-------------------------------------------<<<
     retval['albumno'] = albumno # add albumno to returned dictionary
     retval['photos'] = photo_list(albumno) # add list of photos
 
+    response.headers['Cache-Control'] = 'no-cache'
     if html:
-        response.headers['Cache-Control'] = 'no-cache'
         return template('prettyprint.tpl',
                         pprint_json=json.dumps(retval, indent=4),
                         api_route='/api/album/{0}.html'.format(identifier))
     else:
-        response.headers['Content-Type'] = 'application/json'
-        response.headers['Cache-Control'] = 'no-cache'
         return retval
 
 @get('/api/photo')
 def api_photo(): #-----------------------------------------------------------<<<
     """Handler for GET /API/PHOTO endpoint.
     """
-    response.headers['Content-Type'] = 'application/json'
     response.headers['Cache-Control'] = 'no-cache'
     return json.loads(open('static/json/photos.json').read())
 
@@ -96,12 +92,10 @@ def api_photono(photono): #--------------------------------------------------<<<
     if not photono in photos:
         return dict(errmsg='unknown photo identifier: ' + photono)
 
+    response.headers['Cache-Control'] = 'no-cache'
     if html:
-        response.headers['Cache-Control'] = 'no-cache'
         return template('prettyprint.tpl',
                         pprint_json=json.dumps(photos[photono], indent=4),
                         api_route='/api/photo/{0}.html'.format(photono))
     else:
-        response.headers['Content-Type'] = 'application/json'
-        response.headers['Cache-Control'] = 'no-cache'
         return photos[photono]
