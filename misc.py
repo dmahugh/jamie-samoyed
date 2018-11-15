@@ -10,7 +10,7 @@ import socket
 import sys
 
 from fnmatch import fnmatch
-from pip.operations import freeze
+from pip._internal.operations import freeze
 from timeit import default_timer
 
 # logcalls() is at top of file so it can be used to decorate functions below
