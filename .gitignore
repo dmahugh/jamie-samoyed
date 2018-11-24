@@ -8,3 +8,4 @@ ae.bat
 # folders to exclude from GitHub repo
 __pycache__/
 archive/
+old_azure_deployment/
