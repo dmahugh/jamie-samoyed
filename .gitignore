@@ -9,3 +9,4 @@ ae.bat
 __pycache__/
 archive/
 old_azure_deployment/
+env/
